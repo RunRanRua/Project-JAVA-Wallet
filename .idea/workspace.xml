@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a845e8-f01a-439e-bc13-69355d82f2a3" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/Log-in.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2023_15_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2023_15_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/HelloController.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Market.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/About.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Help.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Policy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Profil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Profil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +71,16 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;RRR&quot;
   }
+<<<<<<< Updated upstream
 }</component>
+=======
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.isep.projectjavawallet" />
+    </key>
+  </component>
+>>>>>>> Stashed changes
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
