@@ -1,12 +1,11 @@
 package com.isep.projectjavawallet.controllers;
 
+import com.isep.projectjavawallet.bean.Profil;
+
 public class HomeController {
     private Profil profil;
     private String num;
     private Market market;
-    private int mokj;
-    public char bob;
-    private int s;
 
 
     
