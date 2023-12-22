@@ -5,6 +5,7 @@ public class HomeController {
     private String num;
     private Market market;
     private int mokj;
+    public char bob;
 
     
 }
