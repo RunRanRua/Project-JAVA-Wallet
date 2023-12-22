@@ -6,6 +6,8 @@ public class HomeController {
     private Market market;
     private int mokj;
     public char bob;
+    private int s;
+
 
     
 }
