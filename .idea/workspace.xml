@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67a845e8-f01a-439e-bc13-69355d82f2a3" name="Changes" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/Log-in.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2023_15_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_12_2023_15_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -22,6 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Profil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
+>>>>>>> Stashed changes
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
