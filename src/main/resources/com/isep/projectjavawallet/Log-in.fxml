@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="Log_in" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.HelloController">
+   <children>
+      <TextField fx:id="username" layoutX="50.0" layoutY="78.0" prefHeight="43.0" prefWidth="275.0" promptText="Username / Email address" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="145.0" layoutY="279.0" mnemonicParsing="false" style="-fx-background-radius: 50;" text="Log in" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="PW" layoutX="50.0" layoutY="153.0" prefHeight="43.0" prefWidth="275.0" promptText="Password" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="No_Account" layoutX="106.0" layoutY="121.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnterBouton" onMouseExited="#handleMouseExitBouton" style="-fx-background-color: transparent;" text="I don't have an account">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="No_PW" layoutX="112.0" layoutY="196.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnterBouton" onMouseExited="#handleMouseExitBouton" style="-fx-background-color: transparent;" text="I forgot my password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
