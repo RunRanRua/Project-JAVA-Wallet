@@ -21,17 +21,32 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ToggleButton mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="ToggleButton" />
-                  <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="ToggleButton" GridPane.rowIndex="2" />
-                  <ToggleButton layoutX="10.0" layoutY="90.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="95.0" text="ToggleButton" GridPane.rowIndex="1" />
-                  <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="ToggleButton" GridPane.rowIndex="3" />
-                  <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="92.0" text="ToggleButton" GridPane.rowIndex="4" />
+                  <ToggleButton alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="Profil">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="Wallets" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="95.0" text="Market" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="94.0" text="Currency" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="92.0" text="Other" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></ToggleButton>
                </children>
             </GridPane>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="501.0">
          <children>
-            <AnchorPane fx:id="profilPane" prefHeight="397.0" prefWidth="506.0">
+            <AnchorPane fx:id="profilPane" prefHeight="397.0" prefWidth="506.0" visible="false">
                <children>
                   <ImageView fitHeight="122.0" fitWidth="128.0" layoutX="171.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -43,7 +58,7 @@
                         <Font name="Agency FB" size="36.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="241.0" prefHeight="35.0" prefWidth="233.0" text="mail :" textAlignment="CENTER">
+                  <Label layoutX="14.0" layoutY="241.0" prefHeight="35.0" prefWidth="64.0" text="mail :" textAlignment="CENTER">
                      <font>
                         <Font name="Agency FB" size="24.0" />
                      </font>
@@ -53,7 +68,7 @@
                         <Font name="Agency FB" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="205.0" prefHeight="35.0" prefWidth="233.0" text="username : xxxxxxxxx" textAlignment="CENTER">
+                  <Label layoutX="14.0" layoutY="205.0" prefHeight="35.0" prefWidth="93.0" text="username :" textAlignment="CENTER">
                      <font>
                         <Font name="Agency FB" size="24.0" />
                      </font>
@@ -63,7 +78,7 @@
                         <Font name="System Bold Italic" size="12.0" />
                      </font>
                   </Button>
-                  <Label layoutX="96.0" layoutY="250.0" prefHeight="24.0" prefWidth="164.0" text="xxxxx@xxx.com">
+                  <Label layoutX="113.0" layoutY="247.0" prefHeight="24.0" prefWidth="182.0" text="xxxxx@xxx.com">
                      <font>
                         <Font name="Agency FB" size="20.0" />
                      </font>
@@ -73,9 +88,44 @@
                         <Font name="System Bold Italic" size="12.0" />
                      </font>
                   </Button>
+                  <Label layoutX="113.0" layoutY="290.0" prefHeight="24.0" prefWidth="182.0" text="************">
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="211.0" prefHeight="24.0" prefWidth="182.0" text="myUsername">
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" layoutX="399.0" layoutY="4.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="24.0" />
+                     </font>
+                  </Button>
+                   <Button fx:id="No_Account" layoutX="40.0" layoutY="338.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnterBouton" onMouseExited="#handleMouseExitBouton" style="-fx-background-color: transparent;" text="Policy" underline="true">
+                       <font>
+                           <Font name="Agency FB" size="24.0" />
+                       </font>
+                   </Button>
+                  <Button fx:id="No_Account1" layoutX="193.0" layoutY="338.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnterBouton" onMouseExited="#handleMouseExitBouton" style="-fx-background-color: transparent;" text="About Us" underline="true">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="No_Account11" layoutX="387.0" layoutY="338.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnterBouton" onMouseExited="#handleMouseExitBouton" style="-fx-background-color: transparent;" text="Helps" underline="true">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="292.0" layoutY="111.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="25.0" style="-fx-background-color: gray;" text="O" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
                </children></AnchorPane>
             <AnchorPane fx:id="marketPane" prefHeight="397.0" prefWidth="506.0" visible="false" />
-            <AnchorPane fx:id="walletPane" prefHeight="397.0" prefWidth="506.0" visible="false" />
+            <AnchorPane fx:id="walletPane" prefHeight="397.0" prefWidth="506.0" />
             <AnchorPane fx:id="currencyPane" prefHeight="397.0" prefWidth="506.0" visible="false" />
             <AnchorPane fx:id="otherPane" prefHeight="397.0" prefWidth="506.0" visible="false" />
          </children></AnchorPane>

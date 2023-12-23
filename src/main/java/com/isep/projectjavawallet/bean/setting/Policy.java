@@ -13,6 +13,7 @@ public class Policy {
         accountDeletion = "your demand will be denied";
     }
 
+    // getters
     public String getPersonalInformation() {
         return personalInformation;
     }

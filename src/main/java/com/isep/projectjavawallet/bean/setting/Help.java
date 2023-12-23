@@ -12,7 +12,7 @@ public class Help {
 
 
 
-
+    // constructor
     public Help(){
         helpForWallet = "There is no help for wallet yet.";
         helpForMarket = "There is no help for market yet.";

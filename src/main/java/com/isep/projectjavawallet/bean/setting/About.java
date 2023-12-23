@@ -15,7 +15,7 @@ public class About {
         aboutTeam = "We are G10 JAVA trinome team";
     }
 
-
+    // getters
     public String getAboutApp() {
         return aboutApp;
     }

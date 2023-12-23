@@ -14,7 +14,7 @@ public class Profil {
 
 
 
-
+    // constructor
     public Profil(){
         account = new Account();
         help = new Help();
@@ -22,7 +22,7 @@ public class Profil {
         policy = new Policy();
     }
 
-
+    // getters
     public Account getAccount() {
         return account;
     }

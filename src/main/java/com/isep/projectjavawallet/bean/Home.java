@@ -2,10 +2,12 @@ package com.isep.projectjavawallet.bean;
 
 import com.isep.projectjavawallet.bean.setting.Profil;
 
+import java.util.ArrayList;
+
 public class Home {
     private Profil profil;
     private Market market;
-    private Wallet[] wallets;
+    private ArrayList<Wallet> wallets;
     private ExchangeRate exchangeRate;
 
 
@@ -20,7 +22,7 @@ public class Home {
         return market;
     }
 
-    public Wallet[] getWallets() {
+    public ArrayList<Wallet> getWallets() {
         return wallets;
     }
 
