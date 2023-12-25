@@ -1,11 +1,10 @@
-package com.isep.projectjavawallet;
+package com.isep.projectjavawallet.controllers.loggin;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
-public class HelloController {
+public class LoginController {
     @FXML
     private Button No_Account;
     @FXML

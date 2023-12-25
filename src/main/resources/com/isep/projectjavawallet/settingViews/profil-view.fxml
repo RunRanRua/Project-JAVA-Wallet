@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="398.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.setting.ProfilController">
+    <children>
+        <Label alignment="CENTER" layoutX="61.0" layoutY="62.0" prefHeight="80.0" prefWidth="363.0" text="name" textAlignment="CENTER">
+            <font>
+                <Font name="Agency FB" size="54.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="195.0" prefHeight="35.0" prefWidth="64.0" text="mail :" textAlignment="CENTER">
+            <font>
+                <Font name="Agency FB" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="240.0" prefHeight="37.0" prefWidth="116.0" text="password :" textAlignment="CENTER">
+            <font>
+                <Font name="Agency FB" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="134.0" prefHeight="50.0" prefWidth="116.0" text="username :" textAlignment="CENTER">
+            <font>
+                <Font name="Agency FB" size="30.0" />
+            </font>
+        </Label>
+        <Button fx:id="changePWDButton" layoutX="354.0" layoutY="246.0" mnemonicParsing="false" onAction="#changePWDButtonClick" prefHeight="25.0" prefWidth="141.0" text="change my password" textFill="#36a5ff">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="79.0" layoutY="195.0" prefHeight="37.0" prefWidth="269.0" text="parkiro.wang@eleve.isep.fr">
+            <font>
+                <Font name="Agency FB" size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="changeMailButton" layoutX="354.0" layoutY="201.0" mnemonicParsing="false" onAction="#changeMailButtonClick" prefHeight="25.0" prefWidth="141.0" text="change my mail" textFill="#36a5ff">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="131.0" layoutY="246.0" prefHeight="24.0" prefWidth="182.0" text="************">
+            <font>
+                <Font name="Agency FB" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="131.0" layoutY="144.0" prefHeight="24.0" prefWidth="182.0" text="myUsername">
+            <font>
+                <Font name="Agency FB" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="logOutButton" alignment="CENTER" layoutX="399.0" layoutY="4.0" mnemonicParsing="false" onAction="#logOutButtonClick" prefHeight="50.0" prefWidth="95.0" text="Log out" textFill="WHITE">
+            <font>
+                <Font name="Agency FB Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="policyButton" layoutX="40.0" layoutY="338.0" mnemonicParsing="false" onAction="#policyButtonClick" text="Policy" underline="true">
+            <font>
+                <Font name="Agency FB" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="aboutUsButton" layoutX="193.0" layoutY="338.0" mnemonicParsing="false" onAction="#aboutUsButtonClick" text="About Us" underline="true">
+            <font>
+                <Font name="Agency FB" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="helpsButton" layoutX="387.0" layoutY="338.0" mnemonicParsing="false" onAction="#helpsButtonClick" text="Helps" underline="true">
+            <font>
+                <Font name="Agency FB" size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.AddNewWalletController">
+   <children>
+      <Button fx:id="confirmButton" layoutX="38.0" layoutY="347.0" mnemonicParsing="false" onAction="#confirmButtonClick" prefHeight="35.0" prefWidth="68.0" text="Confirm" />
+      <Label layoutX="15.0" layoutY="59.0" prefHeight="35.0" prefWidth="95.0" text="Wallet Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="142.0" prefHeight="35.0" prefWidth="134.0" text="Wallet Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="35.0" prefWidth="225.0" text="Create a new wallet">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="14.0" layoutY="177.0" prefHeight="156.0" prefWidth="284.0" promptText="less than 100 characters" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="name" layoutX="14.0" layoutY="94.0" prefHeight="35.0" prefWidth="284.0" promptText="less than 10 characters">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelButton" layoutX="210.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="35.0" prefWidth="68.0" text="Cancel" />
+   </children>
+</AnchorPane>
