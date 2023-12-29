@@ -1,5 +1,11 @@
 package com.isep.projectjavawallet.bean.setting;
 
+
+
+
+/* uncompleted
+        - contents
+*/
 public class About {
     private static String aboutApp;
     private static String aboutTeam;

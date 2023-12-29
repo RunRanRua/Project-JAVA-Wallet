@@ -1,13 +1,14 @@
 package com.isep.projectjavawallet.bean.setting;
 
+
+
+/* uncompleted
+        - contents
+*/
 public class Help {
     private static String helpForWallet;
     private static String helpForMarket;
     private static String helpForConnection;
-
-
-
-
 
 
 

@@ -1,6 +1,6 @@
 package com.isep.projectjavawallet.controllers.wallets;
 
-import com.isep.projectjavawallet.bean.nofinished.Wallet;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;

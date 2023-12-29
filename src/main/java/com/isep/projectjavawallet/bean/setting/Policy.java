@@ -1,5 +1,10 @@
 package com.isep.projectjavawallet.bean.setting;
 
+
+
+/* uncompleted
+        - contents
+*/
 public class Policy {
     private static String personalInformation;
     private static String security;

@@ -1,13 +1,15 @@
 package com.isep.projectjavawallet.bean.setting;
 
+
+
+
+
+/* completed */
 public class Account {
     private String username;
     private String password;
     private String name;
     private String mail;
-
-
-
 
 
 

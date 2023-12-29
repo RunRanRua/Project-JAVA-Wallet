@@ -6,6 +6,8 @@ import com.isep.projectjavawallet.bean.setting.Help;
 
 
 
+
+/* completed */
 public class Profil {
     private final Account account;
     private final Help help;

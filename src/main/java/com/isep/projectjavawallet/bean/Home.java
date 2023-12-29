@@ -1,8 +1,7 @@
 package com.isep.projectjavawallet.bean;
 
-import com.isep.projectjavawallet.bean.nofinished.Market;
-import com.isep.projectjavawallet.bean.nofinished.ExchangeRate;
-import com.isep.projectjavawallet.bean.nofinished.Wallet;
+import com.isep.projectjavawallet.bean.market.Market;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.setting.Profil;
 
 import java.util.ArrayList;
