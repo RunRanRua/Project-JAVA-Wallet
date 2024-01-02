@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
-public class LoginController {
+public class LoginController_no_need {
     @FXML
     private Button No_Account;
     @FXML

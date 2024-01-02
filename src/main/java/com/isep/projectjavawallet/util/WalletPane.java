@@ -123,8 +123,8 @@ public class WalletPane extends Pane {
     // Not finished yet
     private void addButtonAction(){
         try {
-            // using SceneManager to access other window
-            // SceneManager.anotherScene();
+            // show new_wallet window
+            SceneManager.anotherScene("/com/isep/projectjavawallet/WalletsViews/addNewWallet-view.fxml","New wallet");
 
         } catch (Exception ex) {
             ex.printStackTrace();

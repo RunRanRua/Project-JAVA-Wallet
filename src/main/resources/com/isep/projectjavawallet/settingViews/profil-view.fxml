@@ -31,7 +31,7 @@
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Button>
-        <Label layoutX="79.0" layoutY="195.0" prefHeight="37.0" prefWidth="269.0" text="parkiro.wang@eleve.isep.fr">
+        <Label layoutX="79.0" layoutY="195.0" prefHeight="37.0" prefWidth="269.0" text="xxxxxxxxxx@eleve.isep.fr">
             <font>
                 <Font name="Agency FB" size="22.0" />
             </font>
@@ -66,7 +66,7 @@
                 <Font name="Agency FB" size="24.0" />
             </font>
         </Button>
-        <Button fx:id="helpsButton" layoutX="387.0" layoutY="338.0" mnemonicParsing="false" onAction="#helpsButtonClick" text="Helps" underline="true">
+        <Button fx:id="helpsButton" layoutX="387.0" layoutY="338.0" mnemonicParsing="false" onAction="#helpsButtonClick" text="FAQ" underline="true">
             <font>
                 <Font name="Agency FB" size="24.0" />
             </font>

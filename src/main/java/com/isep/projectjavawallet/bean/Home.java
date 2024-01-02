@@ -1,5 +1,6 @@
 package com.isep.projectjavawallet.bean;
 
+import com.isep.projectjavawallet.bean.currency.ExchangeRate;
 import com.isep.projectjavawallet.bean.market.Market;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.setting.Profil;
