@@ -100,6 +100,11 @@ public class SignUpController {
     }
 
     @FXML
+    private void BackonButtonClick(){
+        back2AuthenticationWindow();
+    }
+
+    @FXML
     private void EnterPressed(KeyEvent e) throws FileNotFoundException {
         if (e.getCode() == KeyCode.ENTER){
             createButtonOnClick();

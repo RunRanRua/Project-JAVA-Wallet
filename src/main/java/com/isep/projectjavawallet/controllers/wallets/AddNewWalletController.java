@@ -23,7 +23,7 @@ public class AddNewWalletController {
         // Add contents into SQL
 
         // Transfer contents to WalletPane
-        SceneManager
+
 
         // Close the window
         Stage currentWindow = (Stage) confirmButton.getScene().getWindow();
