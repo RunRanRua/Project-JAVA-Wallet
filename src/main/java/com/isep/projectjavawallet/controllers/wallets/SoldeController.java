@@ -28,7 +28,7 @@ public class SoldeController implements Initializable {
     }
     @FXML
     public void DepositButtonClick(){
-        SceneManager.changeScene("","");
+        SceneManager.changeScene("/com/isep/projectjavawallet/WalletsViews/Depositview.fxml","Deposit");
     }
     @FXML
     public void CurrencyButtonClick(){
