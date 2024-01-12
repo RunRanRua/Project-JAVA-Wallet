@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/AddNewWalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/AddNewWalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

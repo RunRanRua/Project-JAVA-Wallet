@@ -40,7 +40,7 @@
                      <font>
                         <Font name="Agency FB" size="18.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="otherButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="92.0" text="Log Out" GridPane.rowIndex="4">
+                  <ToggleButton fx:id="LogoutButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#LogoutButtonClick" prefHeight="80.0" prefWidth="92.0" text="Log Out" GridPane.rowIndex="4">
                      <font>
                         <Font name="Agency FB" size="18.0" />
                      </font></ToggleButton>

@@ -1,5 +1,6 @@
 package com.isep.projectjavawallet.controllers;
 
+import com.isep.projectjavawallet.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -12,6 +13,7 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
 
+
     // Buttons
     @FXML
     private ToggleButton profilButton;
@@ -22,7 +24,7 @@ public class HomeController implements Initializable {
     @FXML
     private ToggleButton currencyButton;
     @FXML
-    private ToggleButton otherButton;
+    public ToggleButton LogoutButton;
 
 
     @FXML
@@ -38,7 +40,7 @@ public class HomeController implements Initializable {
         marketButton.setToggleGroup(toggleGroup);
         walletsButton.setToggleGroup(toggleGroup);
         currencyButton.setToggleGroup(toggleGroup);
-        otherButton.setToggleGroup(toggleGroup);
+        LogoutButton.setToggleGroup(toggleGroup);
     }
 
 
@@ -68,7 +70,10 @@ public class HomeController implements Initializable {
         }
     }
 
-    
+    @FXML
+    public void LogoutButtonClick(){
+        SceneManager.changeScene("/com/isep/projectjavawallet/loginViews/authentication.fxml","Authentification");
+    }
 
 
     
