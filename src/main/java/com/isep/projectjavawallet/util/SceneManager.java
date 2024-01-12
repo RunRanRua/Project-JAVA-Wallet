@@ -6,12 +6,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 public class SceneManager {
 
     static HomeController homeController;
     static Home home;
 
     private static Stage currentStage;
+    static ArrayList<WalletPane> panes;
 
 
 
@@ -29,6 +32,21 @@ public class SceneManager {
             stage.setScene(scene);
 
             currentStage = stage;   // ?
+
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void anotherScene_walletPane(String fxmlFileName, String title, WalletPane pane) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(SceneManager.class.getResource(fxmlFileName));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle(title);
+            stage.setScene(scene);
+            panes.add(pane);
 
             stage.show();
         } catch (Exception e) {

@@ -138,5 +138,7 @@ public class WalletPane extends Pane {
 
     }
 
-    public void updateWallet(){}
+    public void updateADD(){
+
+    }
 }

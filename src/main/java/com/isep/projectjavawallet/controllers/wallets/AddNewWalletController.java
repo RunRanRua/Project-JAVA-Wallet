@@ -1,5 +1,6 @@
 package com.isep.projectjavawallet.controllers.wallets;
 
+import com.isep.projectjavawallet.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -22,6 +23,7 @@ public class AddNewWalletController {
         // Add contents into SQL
 
         // Transfer contents to WalletPane
+        SceneManager
 
         // Close the window
         Stage currentWindow = (Stage) confirmButton.getScene().getWindow();
