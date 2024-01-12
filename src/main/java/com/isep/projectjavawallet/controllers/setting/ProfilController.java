@@ -60,14 +60,4 @@ public class ProfilController implements Initializable {
 
 
 
-
-    // To be continued (wait SceneManger.changeScene()  )
-    @FXML
-    public void logOutButtonClick(){
-
-    }
-
-
-
-
 }
