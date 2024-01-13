@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/SoldeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/SoldeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,20 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RRR&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java/Test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "RRR",
+    "last_opened_file_path": "C:/Users/Parkiro/Desktop/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\parki\Documents\GitHub\Project-JAVA-Wallet\src\main\resources\com\isep\projectjavawallet\logginViews" />
@@ -67,9 +73,35 @@
       <recent name="com.isep.projectjavawallet" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AuthentificationTest">
+  <component name="RunManager" selected="Application.accountTest">
     <configuration name="AuthentificationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.AuthentificationTest" />
+      <module name="Project-JAVA-Wallet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.isep.projectjavawallet.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.util.DataBase" />
+      <module name="Project-JAVA-Wallet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.isep.projectjavawallet.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="accountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.accountTest" />
       <module name="Project-JAVA-Wallet" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.accountTest" />
         <item itemvalue="Application.AuthentificationTest" />
+        <item itemvalue="Application.DataBase" />
         <item itemvalue="Application.homeTest" />
       </list>
     </recent_temporary>

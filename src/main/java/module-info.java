@@ -1,6 +1,7 @@
 module com.isep.projectjavawallet {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens com.isep.projectjavawallet.controllers to javafx.fxml;
