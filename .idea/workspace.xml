@@ -5,11 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountDBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UpdateManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Profil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/setting/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/LoginController_no_need.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/ProfilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changeMailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changeMailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changePWDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changePWDController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/AuthentificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/AuthentificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletsList-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletsList-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/Login-view_no_need.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/authentication.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/authentication.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/changeMail-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/changeMail-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/changePWD-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/changePWD-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/profil-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/settingViews/profile-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +67,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AuthentificationTest.executor": "Run",
+    "Application.DataBase.executor": "Run",
+    "Application.accountTest.executor": "Run",
+    "Application.homeTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "RRR",
-    "last_opened_file_path": "C:/Users/Parkiro/Desktop/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/parki/Desktop/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +84,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -73,7 +104,7 @@
       <recent name="com.isep.projectjavawallet" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.accountTest">
+  <component name="RunManager" selected="Application.AuthentificationTest">
     <configuration name="AuthentificationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.AuthentificationTest" />
       <module name="Project-JAVA-Wallet" />
@@ -100,8 +131,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="accountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.accountTest" />
+    <configuration name="accountDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.accountDBTest" />
       <module name="Project-JAVA-Wallet" />
       <extension name="coverage">
         <pattern>
@@ -128,12 +159,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.accountTest" />
         <item itemvalue="Application.AuthentificationTest" />
-        <item itemvalue="Application.DataBase" />
         <item itemvalue="Application.homeTest" />
+        <item itemvalue="Application.accountDBTest" />
+        <item itemvalue="Application.DataBase" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -160,5 +198,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

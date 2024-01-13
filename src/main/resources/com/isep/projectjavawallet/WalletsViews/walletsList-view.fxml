@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.isep.projectjavawallet.controllers.wallets.WalletsListController"
-            prefHeight="398.0" prefWidth="499.0">
+<AnchorPane prefHeight="398.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.WalletsListController">
     <children>
-        <ListView fx:id="listView" prefHeight="398.0" prefWidth="499.0" />
+        <ListView fx:id="listView" prefHeight="520.0" prefWidth="805.0" />
     </children>
 </AnchorPane>

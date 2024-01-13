@@ -1,16 +1,29 @@
 package com.isep.projectjavawallet.controllers.setting;
 
-import com.isep.projectjavawallet.bean.setting.Profil;
+import com.isep.projectjavawallet.bean.setting.Profile;
 import com.isep.projectjavawallet.util.SceneManager;
+import com.isep.projectjavawallet.util.UpdateManager;
+import com.isep.projectjavawallet.util.UserManager;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ProfilController implements Initializable {
-    private Profil profil;
+public class ProfileController implements Initializable {
+    private Profile profile;
+
+    @FXML
+    private Label name;
+    @FXML
+    private Label username;
+    @FXML
+    private Label mail;
+
     @FXML
     private Button changeMailButton;
     @FXML
@@ -27,10 +40,13 @@ public class ProfilController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Initialize profil
-        profil = new Profil();
+        // Initialize profile
+        profile = UserManager.getHome().getProfil();
+        name.setText(profile.getAccount().getName());
+        username.setText(profile.getAccount().getUsername());
+        mail.setText(profile.getAccount().getMail());
 
-        // Initialize other variables
+        UpdateManager.setProfileController(this);
 
     }
 
@@ -59,5 +75,9 @@ public class ProfilController implements Initializable {
 
 
 
+    // getters
 
+    public Label getMail() {
+        return mail;
+    }
 }

@@ -9,10 +9,6 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 
 public class SceneManager {
-
-    static HomeController homeController;
-    static Home home;
-
     private static Stage currentStage;
     static ArrayList<WalletPane> panes;
 
@@ -21,8 +17,6 @@ public class SceneManager {
 
 
 
-
-    // Not finished yet
     public static void anotherScene(String fxmlFileName, String title) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(SceneManager.class.getResource(fxmlFileName));
@@ -31,7 +25,6 @@ public class SceneManager {
             stage.setTitle(title);
             stage.setScene(scene);
 
-            currentStage = stage;   // ?
 
             stage.show();
         } catch (Exception e) {
@@ -62,6 +55,7 @@ public class SceneManager {
             Stage stage = new Stage();
             stage.setTitle(title);
             stage.setScene(scene);
+            stage.setResizable(false);
 
             currentStage.close();
             currentStage = stage;
@@ -74,24 +68,6 @@ public class SceneManager {
 
 
     // getters & setters
-
-
-    public static HomeController getHomeController() {
-        return homeController;
-    }
-
-    public static void setHomeController(HomeController homeController) {
-        SceneManager.homeController = homeController;
-    }
-
-    public static Home getHome() {
-        return home;
-    }
-
-    public static void setHome(Home home) {
-        SceneManager.home = home;
-    }
-
     public static Stage getCurrentStage() {
         return currentStage;
     }

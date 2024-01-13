@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DataBase {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/Test1?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/projectWallet?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
     // depending your settings of MySQL
     static final String USER = "root";

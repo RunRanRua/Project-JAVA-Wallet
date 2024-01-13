@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.SoldeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.SoldeController">
    <children>
-      <Button layoutX="165.0" layoutY="58.0" mnemonicParsing="false" onAction="#DepositButtonClick" prefHeight="40.0" prefWidth="110.0" text="Deposit">
+      <Button layoutX="285.0" layoutY="115.0" mnemonicParsing="false" onAction="#DepositButtonClick" prefHeight="40.0" prefWidth="110.0" text="Deposit">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="165.0" layoutY="144.0" mnemonicParsing="false" onAction="#CurrencyButtonClick" prefHeight="40.0" prefWidth="110.0" text="Currency">
+      <Button layoutX="285.0" layoutY="201.0" mnemonicParsing="false" onAction="#CurrencyButtonClick" prefHeight="40.0" prefWidth="110.0" text="Currency">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="323.0" layoutY="58.0" mnemonicParsing="false" onAction="#TransferButtonClick" prefHeight="40.0" prefWidth="110.0" text="Transfer">
+      <Button layoutX="443.0" layoutY="115.0" mnemonicParsing="false" onAction="#TransferButtonClick" prefHeight="40.0" prefWidth="110.0" text="Transfer">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="323.0" layoutY="144.0" mnemonicParsing="false" onAction="#AssetsButtonClick" text="My Assets">
+      <Button layoutX="443.0" layoutY="201.0" mnemonicParsing="false" onAction="#AssetsButtonClick" text="My Assets">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="276.0" layoutY="14.0" text="Solde">
+      <Label layoutX="396.0" layoutY="71.0" text="Solde">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="190.0" layoutY="354.0" mnemonicParsing="false" onAction="#HistoryButtonClick" text="History of Transactions">
+      <Button layoutX="310.0" layoutY="411.0" mnemonicParsing="false" onAction="#HistoryButtonClick" text="History of Transactions">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <LineChart layoutX="6.0" layoutY="200.0" prefHeight="142.0" prefWidth="588.0">
+      <LineChart layoutX="101.0" layoutY="256.0" prefHeight="142.0" prefWidth="588.0">
         <xAxis>
           <CategoryAxis label="Years" prefHeight="20.0" prefWidth="504.0" side="BOTTOM" />
         </xAxis>

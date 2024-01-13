@@ -4,6 +4,7 @@ import com.isep.projectjavawallet.util.SceneManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
@@ -16,7 +17,7 @@ public class HomeController implements Initializable {
 
     // Buttons
     @FXML
-    private ToggleButton profilButton;
+    private ToggleButton profileButton;
     @FXML
     private ToggleButton marketButton;
     @FXML
@@ -24,7 +25,7 @@ public class HomeController implements Initializable {
     @FXML
     private ToggleButton currencyButton;
     @FXML
-    public ToggleButton LogoutButton;
+    public Button LogoutButton;
 
 
     @FXML
@@ -34,21 +35,21 @@ public class HomeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // profilButtonClick setting
         ToggleGroup toggleGroup = new ToggleGroup();
-        profilButton.setToggleGroup(toggleGroup);
+        profileButton.setToggleGroup(toggleGroup);
         marketButton.setToggleGroup(toggleGroup);
         walletsButton.setToggleGroup(toggleGroup);
         currencyButton.setToggleGroup(toggleGroup);
-        LogoutButton.setToggleGroup(toggleGroup);
+        walletsButton.setSelected(true);
+        walletsButtonClick();
     }
 
 
     @FXML
-    public void profilButtonClick(){
+    public void profileButtonClick(){
         try {
             // load sub-window's FXML
-            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/settingViews/profil-view.fxml"));
+            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/settingViews/profile-view.fxml"));
             rightPartPane.getChildren().clear();
             rightPartPane.getChildren().setAll(pane2);
 

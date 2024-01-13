@@ -40,11 +40,11 @@ public class WalletPane extends Pane {
         // walletIcon
         walletView.setFitHeight(70);
         walletView.setFitWidth(75);
-        walletView.setLayoutX(0);
+        walletView.setLayoutX(40);
         walletView.setLayoutY(5);
 
         // addButton
-        addButton.setLayoutX(415);
+        addButton.setLayoutX(700);
         addButton.setLayoutY(15);
         Image addIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/isep/projectjavawallet/imgs/addIcon.png")));
         ImageView addView = new ImageView(addIcon);
@@ -53,42 +53,42 @@ public class WalletPane extends Pane {
         addButton.setGraphic(addView);
 
         // removeButton
-        removeButton.setLayoutX(415);
+        removeButton.setLayoutX(700);
         removeButton.setLayoutY(15);
         Image removeIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/isep/projectjavawallet/imgs/delIcon.png")));
         ImageView removeView = new ImageView(removeIcon);
         removeView.setFitHeight(50);
         removeView.setFitWidth(50);
         removeButton.setGraphic(removeView);
-        removeButton.setVisible(false);
+        //removeButton.setVisible(false);
 
         // infoButton
-        infoButton.setLayoutX(350);
+        infoButton.setLayoutX(620);
         infoButton.setLayoutY(15);
         Image infoIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/isep/projectjavawallet/imgs/infoIcon.png")));
         ImageView infoView = new ImageView(infoIcon);
         infoView.setFitHeight(50);
         infoView.setFitWidth(50);
         infoButton.setGraphic(infoView);
-        infoButton.setVisible(false);
+        //infoButton.setVisible(false);
 
         // enterButton
-        enterButton.setLayoutX(285);
+        enterButton.setLayoutX(540);
         enterButton.setLayoutY(15);
         Image enterIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/isep/projectjavawallet/imgs/enterIcon.png")));
         ImageView enterView = new ImageView(enterIcon);
         enterView.setFitHeight(50);
         enterView.setFitWidth(50);
         enterButton.setGraphic(enterView);
-        enterButton.setVisible(false);
+        //enterButton.setVisible(false);
 
         // walletName
-        walletName.setLayoutX(100);
-        walletName.setLayoutY(25);
+        walletName.setLayoutX(150);
+        walletName.setLayoutY(22);
         walletName.prefHeight(45);
         walletName.prefWidth(90);
         walletName.setText("walletName");       // MAX 10 letters
-        walletName.setFont(new Font("System Bold",28));
+        walletName.setFont(new Font("System Bold",36));
 
         this.getChildren().addAll(addButton,removeButton,infoButton,enterButton,walletName, walletView);
 

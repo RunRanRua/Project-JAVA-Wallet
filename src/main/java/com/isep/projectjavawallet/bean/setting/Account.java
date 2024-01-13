@@ -55,4 +55,14 @@ public class Account {
     public void setMail(String mail) {
         this.mail = mail;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", mail='" + mail + '\'' +
+                '}';
+    }
 }

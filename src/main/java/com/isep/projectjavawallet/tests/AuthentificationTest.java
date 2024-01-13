@@ -14,6 +14,7 @@ public class AuthentificationTest extends javafx.application.Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Authentification");
         stage.setScene(scene);
+        stage.setResizable(false);
         SceneManager.setCurrentStage(stage);
 
         stage.show();

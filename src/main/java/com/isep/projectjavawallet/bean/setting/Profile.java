@@ -1,24 +1,24 @@
 package com.isep.projectjavawallet.bean.setting;
 
-import com.isep.projectjavawallet.bean.setting.About;
-import com.isep.projectjavawallet.bean.setting.Account;
-import com.isep.projectjavawallet.bean.setting.Help;
-
-
-
 
 /* completed */
-public class Profil {
-    private final Account account;
+public class Profile {
+    private Account account;
     private final Help help;
     private final About about;
     private final Policy policy;
 
 
 
-    // constructor
-    public Profil(){
+    // constructors
+    public Profile(){
         account = new Account();
+        help = new Help();
+        about = new About();
+        policy = new Policy();
+    }
+    public Profile(Account account){
+        this.account = account;
         help = new Help();
         about = new About();
         policy = new Policy();
@@ -27,6 +27,10 @@ public class Profil {
     // getters
     public Account getAccount() {
         return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public Help getHelp() {

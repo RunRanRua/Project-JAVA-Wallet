@@ -3,15 +3,16 @@ package com.isep.projectjavawallet.bean;
 import com.isep.projectjavawallet.bean.currency.ExchangeRate;
 import com.isep.projectjavawallet.bean.market.Market;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
-import com.isep.projectjavawallet.bean.setting.Profil;
+import com.isep.projectjavawallet.bean.setting.Profile;
 
 import java.util.ArrayList;
 
 public class Home {
-    private Profil profil;
+    private Profile profile;
     private Market market;
     private ArrayList<Wallet> wallets;
     private ExchangeRate exchangeRate;
+
 
 
 
@@ -22,11 +23,19 @@ public class Home {
         wallets.remove(wallet);
     }
 
+    // constructors
 
+    public Home(){}
+    public Home(Profile profile, Market market, ArrayList<Wallet> wallets, ExchangeRate exchangeRate) {
+        this.profile = profile;
+        this.market = market;
+        this.wallets = wallets;
+        this.exchangeRate = exchangeRate;
+    }
 
     // getters
-    public Profil getProfil() {
-        return profil;
+    public Profile getProfil() {
+        return profile;
     }
 
     public Market getMarket() {
