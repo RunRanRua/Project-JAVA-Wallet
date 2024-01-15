@@ -1,4 +1,4 @@
-package com.isep.projectjavawallet.controllers.loggin;
+package com.isep.projectjavawallet.controllers.login;
 
 import com.isep.projectjavawallet.bean.setting.Account;
 import com.isep.projectjavawallet.dao.AccountDao;
@@ -68,7 +68,7 @@ public class SignUpController {
             return;
         }
 
-        boolean isValidMail = (Pattern.matches("^[a-zA-Z0-9_]+@[a-z]+.[a-z]+$",mail_str));
+        boolean isValidMail = (Pattern.matches("^[a-zA-Z0-9_]+@.+[.][a-z]+$",mail_str));
         if (!isValidMail){
             alert.setContentText("Invalid mail ! (〃＞目＜)");
             alert.show();

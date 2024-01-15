@@ -1,4 +1,4 @@
-package com.isep.projectjavawallet.controllers.loggin;
+package com.isep.projectjavawallet.controllers.login;
 
 import com.isep.projectjavawallet.bean.Home;
 import com.isep.projectjavawallet.bean.currency.ExchangeRate;

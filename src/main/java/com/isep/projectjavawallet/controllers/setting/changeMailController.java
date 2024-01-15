@@ -36,7 +36,7 @@ public class changeMailController implements Initializable {
 
         String mail = newMail.getText();
 
-        boolean isValidMail = (Pattern.matches("^[a-zA-Z0-9_]+@[a-z]+.[a-z]+$",mail));
+        boolean isValidMail = (Pattern.matches("^[a-zA-Z0-9_]+@.+[.][a-z]+$",mail));
         if(mail.isEmpty() || !isValidMail){
             alert.setContentText("Invalid mail !");
             alert.show();
