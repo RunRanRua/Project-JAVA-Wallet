@@ -143,7 +143,7 @@ public class WalletPane extends Pane {
             if (response == ButtonType.OK) {
                 String username = UserManager.getHome().getProfil().getAccount().getUsername();
                 // remove from database
-                boolean isSuccessful = new WalletListDao().removeWallet(username, );
+                // boolean isSuccessful = new WalletListDao().removeWallet(username, Wid );
                 // remove from back-end list (Wallet)
 
                 // remove from front-end list (wallet Pane)

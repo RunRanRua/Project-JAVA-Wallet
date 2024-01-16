@@ -43,6 +43,8 @@ public class WalletListDao {
         return true;
     }
 
+
+    /*
     public boolean removeWallet(String username, int Wid){
         // 1- Start connect dataBase
         con = DataBase.getConnection();
@@ -55,6 +57,7 @@ public class WalletListDao {
 
         return true;
     }
+     */
 
 
 
