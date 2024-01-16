@@ -44,20 +44,35 @@ public class WalletListDao {
     }
 
 
-    /*
-    public boolean removeWallet(String username, int Wid){
+
+    public boolean removeWallet(String username, Wallet wallet) throws SQLException {
         // 1- Start connect dataBase
         con = DataBase.getConnection();
 
         // 2. prepare statement
         String deleteWallet = "DELETE FROM wallets " +
                 "WHERE (username = \""+  username + "\"" +
-                "AND Wid = " +  Wid + ")";
+                "AND IBAN = \"" +  wallet.getIBAN() + "\")";
+        System.out.println(deleteWallet);
+        ps = con.prepareStatement(deleteWallet);
 
+        // 3- execute
+        try{
+            ps.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+            con.close();
+            ps.close();
+            return false;
+        }
 
+        System.out.println("remove Successful");
+        con.close();
+        ps.close();
         return true;
+
     }
-     */
+
 
 
 

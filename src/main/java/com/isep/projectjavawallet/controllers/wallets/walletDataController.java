@@ -2,6 +2,7 @@ package com.isep.projectjavawallet.controllers.wallets;
 
 import com.isep.projectjavawallet.util.SceneManager;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -10,7 +11,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SoldeController implements Initializable {
+public class walletDataController implements Initializable {
     @FXML
     private Button DepositButton;
     @FXML
@@ -47,4 +48,7 @@ public class SoldeController implements Initializable {
         SceneManager.changeScene("","");
     }
 
+    public void backButtonClick() {
+        SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/WalletsViews/walletsList-view.fxml");
+    }
 }

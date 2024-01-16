@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.SoldeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.walletDataController">
    <children>
       <Button layoutX="285.0" layoutY="115.0" mnemonicParsing="false" onAction="#DepositButtonClick" prefHeight="40.0" prefWidth="110.0" text="Deposit">
          <font>
@@ -45,5 +45,6 @@
           <NumberAxis label="Value" prefHeight="104.0" prefWidth="55.0" side="LEFT" />
         </yAxis>
       </LineChart>
+      <Button mnemonicParsing="false" onAction="#backButtonClick" prefHeight="74.0" prefWidth="81.0" text="Back" />
    </children>
 </AnchorPane>

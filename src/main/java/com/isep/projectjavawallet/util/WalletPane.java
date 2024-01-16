@@ -11,6 +11,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 
+import java.sql.SQLException;
 import java.util.Objects;
 
 public class WalletPane extends Pane {
@@ -117,7 +118,6 @@ public class WalletPane extends Pane {
             enterButtonAction();
         });
 
-
     }
 
 
@@ -140,12 +140,18 @@ public class WalletPane extends Pane {
         alert.getButtonTypes().setAll(ButtonType.OK, ButtonType.CANCEL);
 
         alert.showAndWait().ifPresent(response -> {
+
             if (response == ButtonType.OK) {
                 String username = UserManager.getHome().getProfil().getAccount().getUsername();
-                // remove from database
-                // boolean isSuccessful = new WalletListDao().removeWallet(username, Wid );
-                // remove from back-end list (Wallet)
 
+                // remove from database
+                try {
+                    boolean isSuccessful = new WalletListDao().removeWallet(username, wallet);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                // remove from back-end list (Wallet)
+                UserManager.getHome().getWallets().remove(wallet);
                 // remove from front-end list (wallet Pane)
                 UserManager.getWalletsListController().removeWalletPane(this);
                 // remove from back-end list (wallet Pane)
@@ -164,7 +170,7 @@ public class WalletPane extends Pane {
 
     }
     private void enterButtonAction() {
-
+        SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/WalletsViews/walletData.fxml");
     }
 
 
@@ -181,7 +187,7 @@ public class WalletPane extends Pane {
     }
 
     public void update_LOAD(Wallet wallet){
-        wallet = UserManager.getHome().getWallets().get(id);
+        this.wallet = wallet;
         addButton.setVisible(false);
         infoButton.setVisible(true);
         removeButton.setVisible(true);
