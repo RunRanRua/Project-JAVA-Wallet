@@ -11,10 +11,14 @@ import java.util.ArrayList;
 public class History {
     private final ArrayList<Bond> bondHistory; 
     private final ArrayList<Action> actionHistory; 
-    private final ArrayList<Transaction> transactionHistory; 
-    
-    
-    
+    private final ArrayList<Transaction> transactionHistory;
+
+    public History(){
+        bondHistory = new ArrayList<Bond>();
+        actionHistory = new ArrayList<Action>();
+        transactionHistory = new ArrayList<Transaction>();
+    }
+
     // methods
     public void addBondHistory(Bond bond){
         bondHistory.add(bond);

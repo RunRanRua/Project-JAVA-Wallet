@@ -5,7 +5,9 @@ import com.isep.projectjavawallet.bean.currency.ExchangeRate;
 import com.isep.projectjavawallet.bean.market.Market;
 import com.isep.projectjavawallet.bean.setting.Account;
 import com.isep.projectjavawallet.bean.setting.Profile;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.dao.AccountDao;
+import com.isep.projectjavawallet.util.DataLoading;
 import com.isep.projectjavawallet.util.SceneManager;
 import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
@@ -76,15 +78,17 @@ public class AuthenticationController {
         SceneManager.changeScene("/com/isep/projectjavawallet/loginViews/SignUp.fxml","Sign up");
     }
 
-    private void loginSuccessful(Account account){
+    private void loginSuccessful(Account account) throws SQLException {
         /*
             - retrieve user data
             - create home
             - complete all info
          */
 
-        Home home = new Home(new Profile(account),new Market(), new ArrayList<>(), new ExchangeRate());
+        Home home = new Home(new Profile(account),new Market(), new ArrayList<Wallet>(), new ExchangeRate());
         UserManager.setHome(home);
+        DataLoading.loadWalletData(account.getUsername(), UserManager.getHome().getWallets());
+
         SceneManager.changeScene("/com/isep/projectjavawallet/home-view.fxml","Home");
     }
 

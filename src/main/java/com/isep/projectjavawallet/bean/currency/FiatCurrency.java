@@ -11,5 +11,5 @@ public enum FiatCurrency {
     PLN, THB, ILS, IDR, CZK,
     AED, TRY, HUF, CLP, SAR,
     PHP, MYR, COP, RUB, RON,
-    PEN, BHD, BGN, ARS
+    PEN, BHD, BGN, ARS;
 }

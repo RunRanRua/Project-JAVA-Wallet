@@ -1,30 +1,32 @@
 package com.isep.projectjavawallet.util;
 
-import javafx.geometry.Pos;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
+import com.isep.projectjavawallet.dao.WalletListDao;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 
 import java.util.Objects;
 
 public class WalletPane extends Pane {
-    private Button addButton;
-    private Button removeButton;
-    private Button infoButton;
-    private Button enterButton;
-    private Label walletName;
-    private Label walletDescription;
+    Wallet wallet;
+    private final int id;
+    private final Button addButton;
+    private final Button removeButton;
+    private final Button infoButton;
+    private final Button enterButton;
+    private final Label walletName;
+    private final Label walletDescription;
 
 
 
-    public WalletPane(){
+    public WalletPane(int id){
+        this.id = id;
         addButton = new Button();
         removeButton = new Button();
         infoButton = new Button();
@@ -60,7 +62,7 @@ public class WalletPane extends Pane {
         removeView.setFitHeight(50);
         removeView.setFitWidth(50);
         removeButton.setGraphic(removeView);
-        //removeButton.setVisible(false);
+        removeButton.setVisible(false);
 
         // infoButton
         infoButton.setLayoutX(620);
@@ -70,7 +72,7 @@ public class WalletPane extends Pane {
         infoView.setFitHeight(50);
         infoView.setFitWidth(50);
         infoButton.setGraphic(infoView);
-        //infoButton.setVisible(false);
+        infoButton.setVisible(false);
 
         // enterButton
         enterButton.setLayoutX(540);
@@ -80,7 +82,7 @@ public class WalletPane extends Pane {
         enterView.setFitHeight(50);
         enterView.setFitWidth(50);
         enterButton.setGraphic(enterView);
-        //enterButton.setVisible(false);
+        enterButton.setVisible(false);
 
         // walletName
         walletName.setLayoutX(150);
@@ -131,14 +133,60 @@ public class WalletPane extends Pane {
         }
     }
     private void removeButtonAction() {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setHeaderText(null);
+        alert.setContentText("Are you sure to remove this wallet?");
+
+        alert.getButtonTypes().setAll(ButtonType.OK, ButtonType.CANCEL);
+
+        alert.showAndWait().ifPresent(response -> {
+            if (response == ButtonType.OK) {
+                String username = UserManager.getHome().getProfil().getAccount().getUsername();
+                // remove from database
+                boolean isSuccessful = new WalletListDao().removeWallet(username, );
+                // remove from back-end list (Wallet)
+
+                // remove from front-end list (wallet Pane)
+                UserManager.getWalletsListController().removeWalletPane(this);
+                // remove from back-end list (wallet Pane)
+                UserManager.getWalletPanes().remove(this);
+
+            }
+        });
     }
     private void infoButtonAction() {
+        try {
+            // show new_wallet window
+            SceneManager.anotherScene_walletPane("/com/isep/projectjavawallet/WalletsViews/walletInfo-view.fxml","wallet Information",id);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
     }
     private void enterButtonAction() {
 
     }
 
-    public void updateADD(){
 
+
+
+    public void update_ADD(String Wname, String Wdescription){
+        wallet = UserManager.getHome().getWallets().get(id);
+        addButton.setVisible(false);
+        infoButton.setVisible(true);
+        removeButton.setVisible(true);
+        enterButton.setVisible(true);
+        walletName.setText(Wname);
+        walletDescription.setText(Wdescription);
+    }
+
+    public void update_LOAD(Wallet wallet){
+        wallet = UserManager.getHome().getWallets().get(id);
+        addButton.setVisible(false);
+        infoButton.setVisible(true);
+        removeButton.setVisible(true);
+        enterButton.setVisible(true);
+        walletName.setText(wallet.getWalletName());
+        walletDescription.setText(wallet.getDescription());
     }
 }

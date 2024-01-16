@@ -1,6 +1,7 @@
 package com.isep.projectjavawallet.util;
 
 import com.isep.projectjavawallet.bean.Home;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.controllers.HomeController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +11,6 @@ import java.util.ArrayList;
 
 public class SceneManager {
     private static Stage currentStage;
-    static ArrayList<WalletPane> panes;
 
 
 
@@ -32,14 +32,17 @@ public class SceneManager {
         }
     }
 
-    public static void anotherScene_walletPane(String fxmlFileName, String title, WalletPane pane) {
+
+
+    public static void anotherScene_walletPane(String fxmlFileName, String title, int walletPaneID) {
+        UserManager.setWalletPaneID(walletPaneID);
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(SceneManager.class.getResource(fxmlFileName));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle(title);
             stage.setScene(scene);
-            panes.add(pane);
+
 
             stage.show();
         } catch (Exception e) {
@@ -64,6 +67,7 @@ public class SceneManager {
             e.printStackTrace();
         }
     }
+
 
 
 

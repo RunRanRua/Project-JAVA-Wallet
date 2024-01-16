@@ -36,6 +36,9 @@ public class AccountDao {
             return null;
         }
         System.out.println("Search successful");
+
+        con.close();
+        ps.close();
         return new Account(username,password,name,mail);
     }
 
@@ -64,6 +67,7 @@ public class AccountDao {
 
         System.out.println("Insert Successful");
         con.close();
+        ps.close();
         return true;
     }
 
@@ -90,6 +94,7 @@ public class AccountDao {
 
         System.out.println("Password is changed");
         con.close();
+        ps.close();
         return true;
     }
 
@@ -111,18 +116,13 @@ public class AccountDao {
             e.printStackTrace();
             System.out.println("Failed");
             con.close();
+            ps.close();
             return false;
         }
 
         System.out.println("Mail is changed");
         con.close();
+        ps.close();
         return true;
     }
-
-
-
-    // Optional
-    // public boolean deleteUser(String username){}
-
-
 }
