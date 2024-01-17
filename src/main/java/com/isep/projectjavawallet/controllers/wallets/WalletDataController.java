@@ -47,7 +47,7 @@ public class WalletDataController implements Initializable {
     }
     @FXML
     public void TransferButtonClick(){
-        SceneManager.changeScene("","");
+        SceneManager.anotherScene("/com/isep/projectjavawallet/WalletsViews/transfer-view.fxml","Transfer");
     }
     @FXML
     public void AssetsButtonClick(){
