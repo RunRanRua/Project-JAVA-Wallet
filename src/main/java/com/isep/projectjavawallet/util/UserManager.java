@@ -1,7 +1,9 @@
 package com.isep.projectjavawallet.util;
 
 import com.isep.projectjavawallet.bean.Home;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.controllers.HomeController;
+import com.isep.projectjavawallet.controllers.wallets.WalletDataController;
 import com.isep.projectjavawallet.controllers.wallets.WalletsListController;
 
 import java.util.ArrayList;
@@ -13,9 +15,15 @@ public class UserManager {
 
 
     // Wallet list use
-    private static ArrayList<WalletPane> walletPanes = new ArrayList<>();
     private static WalletsListController walletsListController;
+    private static ArrayList<WalletPane> walletPanes = new ArrayList<>();
     private static int walletPaneID;
+
+
+    // Wallet data use
+    private static WalletDataController walletDataController;
+    private static Wallet currentWallet;
+
 
 
 
@@ -65,5 +73,21 @@ public class UserManager {
 
     public static void setWalletPaneID(int walletPaneID) {
         UserManager.walletPaneID = walletPaneID;
+    }
+
+    public static Wallet getCurrentWallet() {
+        return currentWallet;
+    }
+
+    public static void setCurrentWallet(Wallet currentWallet) {
+        UserManager.currentWallet = currentWallet;
+    }
+
+    public static WalletDataController getWalletDataController() {
+        return walletDataController;
+    }
+
+    public static void setWalletDataController(WalletDataController walletDataController) {
+        UserManager.walletDataController = walletDataController;
     }
 }

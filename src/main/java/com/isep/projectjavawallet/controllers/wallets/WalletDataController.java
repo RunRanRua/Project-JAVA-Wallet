@@ -1,17 +1,25 @@
 package com.isep.projectjavawallet.controllers.wallets;
 
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.util.SceneManager;
-import javafx.application.Application;
-import javafx.event.ActionEvent;
+import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.scene.control.Label;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class walletDataController implements Initializable {
+public class WalletDataController implements Initializable {
+
+    @FXML
+    private Label amount;
+
+    @FXML
+    private Label currency;
+
+
     @FXML
     private Button DepositButton;
     @FXML
@@ -25,11 +33,13 @@ public class walletDataController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        UserManager.setWalletDataController(this);
+        amount.setText(String.valueOf(UserManager.getCurrentWallet().getAmount()));
+        currency.setText(UserManager.getCurrentWallet().getReferenceCurrency());
     }
     @FXML
     public void DepositButtonClick(){
-        SceneManager.changeScene("/com/isep/projectjavawallet/WalletsViews/Depositview.fxml","Deposit");
+        SceneManager.anotherScene("/com/isep/projectjavawallet/WalletsViews/Depositview.fxml","Deposit");
     }
     @FXML
     public void CurrencyButtonClick(){
@@ -50,5 +60,19 @@ public class walletDataController implements Initializable {
 
     public void backButtonClick() {
         SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/WalletsViews/walletsList-view.fxml");
+    }
+
+
+
+
+
+
+
+    public Label getAmount() {
+        return amount;
+    }
+
+    public Label getCurrency() {
+        return currency;
     }
 }

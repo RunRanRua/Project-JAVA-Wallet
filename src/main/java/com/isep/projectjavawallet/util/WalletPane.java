@@ -170,7 +170,9 @@ public class WalletPane extends Pane {
 
     }
     private void enterButtonAction() {
+        UserManager.setCurrentWallet(wallet);
         SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/WalletsViews/walletData.fxml");
+
     }
 
 

@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/DepositController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/SoldeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/walletDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/WalletListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/WalletListDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/walletDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/Depositview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/Depositview.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;RRR&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/parki/Desktop/My Life/Codage/Program-Java/TP2_G10_WANG&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Parkiro/Desktop/mysql-connector-j-8.2.0.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,

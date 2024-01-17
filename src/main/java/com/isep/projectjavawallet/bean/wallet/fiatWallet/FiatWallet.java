@@ -1,14 +1,16 @@
 package com.isep.projectjavawallet.bean.wallet.fiatWallet;
 
 import com.isep.projectjavawallet.bean.currency.FiatCurrency;
+import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Asset;
+import com.isep.projectjavawallet.util.UserManager;
 
 import java.util.HashMap;
 
 
 
 /* uncompleted:
-* 3 Methods
+* 2 Methods
 * */
 public class FiatWallet {
     private HashMap<FiatCurrency,Double> balances;
@@ -18,9 +20,6 @@ public class FiatWallet {
 
 
     // methods
-    public void deposit(double amount, FiatCurrency currency){
-
-    }
     public void transfer(double amount, FiatCurrency currency, String IBAN){
 
     }
