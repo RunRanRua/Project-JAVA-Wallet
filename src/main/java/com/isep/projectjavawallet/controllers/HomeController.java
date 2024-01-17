@@ -82,6 +82,11 @@ public class HomeController implements Initializable {
     }
 
     @FXML
+    public void MarketButtonClick(){
+        SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/MarketView.fxml");
+    }
+
+    @FXML
     public void LogoutButtonClick(){
         SceneManager.changeScene("/com/isep/projectjavawallet/loginViews/authentication.fxml","Authentification");
     }

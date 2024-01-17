@@ -9,11 +9,23 @@
   <version>1.0-SNAPSHOT</version>
   <name>Project-JAVA-Wallet</name>
 
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <junit.version>5.9.2</junit.version>  </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.github.crazzyghost</groupId>
+      <artifactId>alphavantage-java</artifactId>
+      <version>1.6.2</version>
+    </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
