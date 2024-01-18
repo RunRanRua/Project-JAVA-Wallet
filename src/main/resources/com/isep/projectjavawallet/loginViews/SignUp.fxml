@@ -12,22 +12,22 @@
          </font></Label>
       <Label layoutX="17.0" layoutY="28.0" prefHeight="32.0" prefWidth="109.0" text="Username">
          <font>
-            <Font name="System Bold Italic" size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
       <Label layoutX="17.0" layoutY="130.0" prefHeight="32.0" prefWidth="109.0" text="Email">
          <font>
-            <Font name="System Bold Italic" size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
       <Label layoutX="17.0" layoutY="185.0" prefHeight="32.0" prefWidth="109.0" text="Password">
          <font>
-            <Font name="System Bold Italic" size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
       <Label layoutX="17.0" layoutY="240.0" prefHeight="32.0" prefWidth="71.0" text="Confirm ">
          <font>
-            <Font name="System Bold Italic" size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
       <TextField fx:id="username" layoutX="95.0" layoutY="31.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="between 3-15 character" />

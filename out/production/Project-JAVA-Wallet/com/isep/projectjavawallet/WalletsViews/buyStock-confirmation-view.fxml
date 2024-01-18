@@ -36,14 +36,14 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="257.0" mnemonicParsing="false" onAction="#yesButtonClick" prefHeight="51.0" prefWidth="83.0" text="YES">
+      <Button layoutX="38.0" layoutY="265.0" mnemonicParsing="false" onAction="#yesButtonClick" prefHeight="34.0" prefWidth="74.0" text="YES">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="257.0" mnemonicParsing="false" onAction="#noButtonClick" prefHeight="51.0" prefWidth="83.0" text="NO">
+      <Button layoutX="182.0" layoutY="265.0" mnemonicParsing="false" onAction="#noButtonClick" prefHeight="37.0" prefWidth="74.0" text="NO">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Button>
       <Label fx:id="symbol" alignment="CENTER" layoutX="87.0" layoutY="54.0" prefHeight="34.0" prefWidth="58.0" text="0">

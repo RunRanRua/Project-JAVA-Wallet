@@ -22,21 +22,24 @@
                <children>
                   <ToggleButton fx:id="profileButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#profileButtonClick" prefHeight="184.0" prefWidth="210.0" text="Profile">
                      <font>
-                        <Font name="Agency FB" size="18.0" />
+                        <Font size="20.0" />
                      </font></ToggleButton>
                   <ToggleButton fx:id="walletsButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#walletsButtonClick" prefHeight="179.0" prefWidth="274.0" text="Wallets" GridPane.rowIndex="2">
                      <font>
-                        <Font name="Agency FB" size="18.0" />
+                        <Font size="20.0" />
                      </font></ToggleButton>
                   <ToggleButton fx:id="marketButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#MarketButtonClick" prefHeight="205.0" prefWidth="261.0" text="Market" GridPane.rowIndex="1">
                      <font>
-                        <Font name="Agency FB" size="18.0" />
+                        <Font size="20.0" />
                      </font></ToggleButton>
                   <ToggleButton fx:id="currencyButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#currencyButtonClick" prefHeight="170.0" prefWidth="241.0" text="Currency" GridPane.rowIndex="3">
                      <font>
-                        <Font name="Agency FB" size="18.0" />
+                        <Font size="20.0" />
                      </font></ToggleButton>
-                  <Button fx:id="LogoutButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#LogoutButtonClick" prefHeight="134.0" prefWidth="145.0" text="Log Out" GridPane.rowIndex="4" />
+                  <Button fx:id="LogoutButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#LogoutButtonClick" prefHeight="134.0" prefWidth="145.0" text="Log Out" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
                </children>
             </GridPane>
          </children></AnchorPane>
