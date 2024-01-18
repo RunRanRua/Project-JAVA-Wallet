@@ -16,7 +16,7 @@ public class Market {
         this.stocks = stocks;
     }
 
-    public ArrayList<Stock> getActions() {
+    public ArrayList<Stock> getStocks() {
         return stocks;
     }
 

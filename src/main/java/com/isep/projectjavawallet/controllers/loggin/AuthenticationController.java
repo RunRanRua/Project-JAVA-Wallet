@@ -10,7 +10,6 @@ import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.dao.AccountDao;
 import com.isep.projectjavawallet.util.DataLoading;
 import com.isep.projectjavawallet.util.SceneManager;
-import com.isep.projectjavawallet.util.UpdateManager;
 import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -90,7 +89,7 @@ public class AuthenticationController {
         Home home = new Home(new Profile(account), new Market(new ArrayList<Stock>()), new ArrayList<Wallet>(), new ArrayList<ExchangeRate>() );
         UserManager.setHome(home);
         DataLoading.loadWalletData(account.getUsername(), UserManager.getHome().getWallets());
-        DataLoading.loadMarketData(UserManager.getHome().getMarket().getActions());
+        DataLoading.loadMarketData(UserManager.getHome().getMarket().getStocks());
         DataLoading.loadCurrencyData(UserManager.getHome().getExchangeRates());
 
         SceneManager.changeScene("/com/isep/projectjavawallet/home-view.fxml","Home");

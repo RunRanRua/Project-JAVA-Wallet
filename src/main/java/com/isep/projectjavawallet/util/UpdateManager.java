@@ -20,9 +20,17 @@ public class UpdateManager {
 
 
 
+    // walletData use
+    public static void updateWalletData(){
+        double amount = UserManager.getCurrentWallet().getAmount();
+        UserManager.getWalletDataController().updateAmount( String.valueOf(amount) );
+    }
+
+    // Profile use
     public static void updateMail(String mail){
         profileController.getMail().setText(mail);
     }
+
 
 
 

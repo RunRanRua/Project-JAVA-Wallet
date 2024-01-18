@@ -15,6 +15,17 @@ public class Stock {
    private String date = DateManager.getDate();
 
 
+
+   public Stock(){
+
+   }
+    public Stock(String symbol, int price, int volume, String date) {
+        this.symbol = symbol;
+        this.price = price;
+        this.volume = volume;
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return symbol + "\t\t"

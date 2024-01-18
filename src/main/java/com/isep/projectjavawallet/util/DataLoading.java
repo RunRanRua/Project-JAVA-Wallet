@@ -12,6 +12,7 @@ import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Asset;
 import com.isep.projectjavawallet.dao.CurrencyDao;
 import com.isep.projectjavawallet.dao.MarketDao;
+import com.isep.projectjavawallet.dao.StockDao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -42,19 +43,18 @@ public class DataLoading {
             String refCurrency = rs.getString("refCurrency");
 
 
-            // FiatWallet, History need to be initialized
-
             // FiatWallet:
-            FiatWallet fiatWallet = new FiatWallet(new HashMap<FiatCurrency,Double>(), new Asset(new ArrayList<Stock>()));
+            FiatWallet fiatWallet = new FiatWallet(new Asset(new ArrayList<Stock>()));
+            new StockDao().findStocks(username,IBAN,fiatWallet.getMyAsset().getStocks());
+
 
             // History:
 
-            Wallet wallet = new Wallet(Wname, Wdescription, IBAN, amount, refCurrency, fiatWallet,new CryptoWallet(), new History());
 
+            // Wallet
+            Wallet wallet = new Wallet(Wname, Wdescription, IBAN, amount, refCurrency, fiatWallet,new CryptoWallet(), new History());
             wallets.add(wallet);
         }
-
-
         con.close();
         ps.close();
     }

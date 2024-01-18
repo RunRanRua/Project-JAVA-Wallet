@@ -13,37 +13,19 @@ import java.util.HashMap;
 * 2 Methods
 * */
 public class FiatWallet {
-    private HashMap<FiatCurrency,Double> balances;
     private Asset myAsset;
 
 
 
 
-    // methods
-    public void transfer(double amount, FiatCurrency currency, String IBAN){
-
-    }
-    public void exchange(double amount, FiatCurrency currency, FiatCurrency newCurrency){
-
-    }
-
 
     // constructors
     public FiatWallet() {
     }
-    public FiatWallet(HashMap<FiatCurrency, Double> balances, Asset myAsset) {
-        this.balances = balances;
+
+
+    public FiatWallet(Asset myAsset) {
         this.myAsset = myAsset;
-    }
-
-
-    // getters & setters
-    public HashMap<FiatCurrency, Double> getBalances() {
-        return balances;
-    }
-
-    public void setBalances(HashMap<FiatCurrency, Double> balances) {
-        this.balances = balances;
     }
 
     public Asset getMyAsset() {

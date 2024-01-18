@@ -34,7 +34,7 @@ public class History {
 
 
     // getters
-    public ArrayList<Stock> getActionHistory() {
+    public ArrayList<Stock> getStockHistory() {
         return stockHistory;
     }
 

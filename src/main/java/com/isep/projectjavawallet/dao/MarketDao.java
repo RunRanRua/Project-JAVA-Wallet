@@ -40,6 +40,22 @@ public class MarketDao {
         return true;
     }
 
+    public void removeStock(String symbol, int quantity) throws SQLException {
+        con = DataBase.getConnection();
+
+        String statement = "UPDATE markets " +
+                            "SET volume = volume - " + quantity +
+                            " WHERE symbol = \"" + symbol + "\"";
+
+
+        ps = con.prepareStatement(statement);
+
+        ps.executeUpdate();
+
+        con.close();
+        ps.close();
+    }
+
 
     public Stock findStock(String symbol) throws SQLException {
         // 1- Start connect dataBase

@@ -7,27 +7,27 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.WalletDataController">
    <children>
-      <Button layoutX="285.0" layoutY="115.0" mnemonicParsing="false" onAction="#DepositButtonClick" prefHeight="40.0" prefWidth="110.0" text="Deposit">
+      <Button layoutX="285.0" layoutY="115.0" mnemonicParsing="false" onAction="#depositButtonClick" prefHeight="40.0" prefWidth="110.0" text="Deposit">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="285.0" layoutY="201.0" mnemonicParsing="false" onAction="#CurrencyButtonClick" prefHeight="40.0" prefWidth="110.0" text="Currency">
+      <Button layoutX="285.0" layoutY="201.0" mnemonicParsing="false" onAction="#buyStockButtonClick" prefHeight="40.0" prefWidth="110.0" text="Buy Stock">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="443.0" layoutY="115.0" mnemonicParsing="false" onAction="#TransferButtonClick" prefHeight="40.0" prefWidth="110.0" text="Transfer">
+      <Button layoutX="443.0" layoutY="115.0" mnemonicParsing="false" onAction="#transferButtonClick" prefHeight="40.0" prefWidth="110.0" text="Transfer">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="443.0" layoutY="201.0" mnemonicParsing="false" onAction="#AssetsButtonClick" text="My Assets">
+      <Button layoutX="443.0" layoutY="201.0" mnemonicParsing="false" onAction="#assetsButtonClick" text="My Assets">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="310.0" layoutY="411.0" mnemonicParsing="false" onAction="#HistoryButtonClick" text="History of Transactions">
+      <Button layoutX="310.0" layoutY="411.0" mnemonicParsing="false" onAction="#historyButtonClick" text="History of Transactions">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

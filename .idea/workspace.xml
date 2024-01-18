@@ -5,29 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/currencyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/CurrencyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/currency-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/MyAssetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/buyStockConfirmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/buyStockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/StockDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/buyStock-confirmation-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/buyStock-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/myAsset-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/currency/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/currency/ExchangeRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/currency/FiatCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/currency/FiatCurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/market/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/market/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Asset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/MarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/MarketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changeMailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changeMailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changePWDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/setting/changePWDController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/AddNewWalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/AddNewWalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/DepositController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/DepositController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/StockController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletDataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/MarketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/MarketDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/accountDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataLoading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataLoading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UpdateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UpdateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/WalletPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,35 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AuthentificationTest.executor": "Run",
-    "Application.DataBase.executor": "Run",
-    "Application.Date.executor": "Run",
-    "Application.DateManager.executor": "Run",
-    "Application.IBANgeneration.executor": "Run",
-    "Application.UpdateManager.executor": "Run",
-    "Application.accountDBTest.executor": "Run",
-    "Application.accountTest.executor": "Run",
-    "Application.homeTest.executor": "Run",
-    "Application.tools.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "RRR",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/parki/Desktop/My Life/Codage/Program-Java/TP7_G10_WANG",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AuthentificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataBase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Date.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DateManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IBANgeneration.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UpdateManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.accountDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.accountTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.homeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tools.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RRR&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/parki/Desktop/My Life/Codage/Program-Java/TP7_G10_WANG&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\parki\Documents\GitHub\Project-JAVA-Wallet\src\main\resources\com\isep\projectjavawallet\logginViews" />

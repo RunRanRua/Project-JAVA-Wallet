@@ -2,6 +2,7 @@ package com.isep.projectjavawallet.util;
 
 import com.isep.projectjavawallet.bean.Home;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.controllers.HomeController;
 import com.isep.projectjavawallet.controllers.wallets.WalletDataController;
 import com.isep.projectjavawallet.controllers.wallets.WalletsListController;
@@ -23,6 +24,10 @@ public class UserManager {
     // Wallet data use
     private static WalletDataController walletDataController;
     private static Wallet currentWallet;
+
+    // Buy Stock use
+    private static Stock stock;
+    private static int stockQuantity;
 
 
 
@@ -89,5 +94,21 @@ public class UserManager {
 
     public static void setWalletDataController(WalletDataController walletDataController) {
         UserManager.walletDataController = walletDataController;
+    }
+
+    public static Stock getStock() {
+        return stock;
+    }
+
+    public static void setStock(Stock stock) {
+        UserManager.stock = stock;
+    }
+
+    public static int getStockQuantity() {
+        return stockQuantity;
+    }
+
+    public static void setStockQuantity(int stockQuantity) {
+        UserManager.stockQuantity = stockQuantity;
     }
 }
