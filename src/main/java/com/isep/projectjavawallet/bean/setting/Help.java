@@ -17,7 +17,7 @@ public class Help {
     public Help(){
         helpForWallet = "There is no help for wallet yet.";
         helpForMarket = "There is no help for market yet.";
-        helpForConnection = "There is no help for connection yet.";
+        helpForConnection = "You are already connected, so no question on this.";
     }
 
 

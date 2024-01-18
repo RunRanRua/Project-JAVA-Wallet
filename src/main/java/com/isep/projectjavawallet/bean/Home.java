@@ -15,14 +15,6 @@ public class Home {
 
 
 
-
-    public void addWallet(Wallet wallet){
-        wallets.add(wallet);
-    }
-    public void removeWallet(Wallet wallet){
-        wallets.remove(wallet);
-    }
-
     // constructors
 
     public Home(){}

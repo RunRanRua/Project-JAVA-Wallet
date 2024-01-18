@@ -11,5 +11,35 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
+      <Label layoutX="14.0" layoutY="72.0" prefHeight="64.0" prefWidth="192.0" text="Personal information">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="178.0" prefHeight="64.0" prefWidth="192.0" text="Security">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="275.0" prefHeight="64.0" prefWidth="192.0" text="Account deletion">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="personalInfo" layoutX="14.0" layoutY="122.0" prefHeight="29.0" prefWidth="472.0" text="X">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="security" layoutX="14.0" layoutY="220.0" prefHeight="29.0" prefWidth="472.0" text="X">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountDeletion" layoutX="14.0" layoutY="314.0" prefHeight="35.0" prefWidth="472.0" text="X">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -13,7 +13,7 @@ public class Policy {
 
     // constructor
     public Policy(){
-        personalInformation = "We have no personal information";
+        personalInformation = "There is no personal information ";
         security = "we have no security";
         accountDeletion = "your demand will be denied";
     }
