@@ -7,35 +7,24 @@ import java.util.ArrayList;
 *       - 3 methods
 */
 public class Asset {
-    private ArrayList<Bond> bonds;
-    private ArrayList<Action>actions;
-
-
-
-    // methods
-    public void bondMaturated(Bond bond){
-    }
-    public void sellBond(Bond bond){
-    }
-    public void sellAction(Action action){
-
-    }
+    private ArrayList<Stock> stocks;
 
 
 
 
-    // constructors
-    public Asset() {
+
+
+
+    public Asset(){}
+    public Asset(ArrayList<Stock> stocks) {
+        this.stocks = stocks;
     }
 
-    public Asset(ArrayList<Bond> bonds, ArrayList<Action> actions) {
-        this.bonds = bonds;
-        this.actions = actions;
+    public ArrayList<Stock> getActions() {
+        return stocks;
     }
 
-
-    // getters
-    public ArrayList<Bond> getBonds() { return bonds;}
-
-    public ArrayList<Action> getActions() {return actions;}
+    public void setActions(ArrayList<Stock> stocks) {
+        this.stocks = stocks;
+    }
 }

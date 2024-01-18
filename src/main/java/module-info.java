@@ -3,6 +3,7 @@ module com.isep.projectjavawallet {
     requires javafx.fxml;
     requires java.sql;
     requires alphavantage.java;
+    requires org.json;
 
 
     opens com.isep.projectjavawallet.controllers to javafx.fxml;

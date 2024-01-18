@@ -9,6 +9,7 @@ import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.dao.AccountDao;
 import com.isep.projectjavawallet.util.DataLoading;
 import com.isep.projectjavawallet.util.SceneManager;
+import com.isep.projectjavawallet.util.UpdateManager;
 import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -84,7 +85,7 @@ public class AuthenticationController {
             - create home
             - complete all info
          */
-
+        UpdateManager.updateMarket();
         Home home = new Home(new Profile(account),new Market(), new ArrayList<Wallet>(), new ExchangeRate());
         UserManager.setHome(home);
         DataLoading.loadWalletData(account.getUsername(), UserManager.getHome().getWallets());

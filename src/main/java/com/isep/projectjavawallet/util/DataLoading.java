@@ -6,9 +6,8 @@ import com.isep.projectjavawallet.bean.wallet.CryptoWallet;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.FiatWallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.History;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Action;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Asset;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Bond;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -42,17 +41,13 @@ public class DataLoading {
             // FiatWallet, History need to be initialized
 
             // FiatWallet:
-            FiatWallet fiatWallet = new FiatWallet(new HashMap<FiatCurrency,Double>(), new Asset(new ArrayList<Bond>(), new ArrayList<Action>()));
+            FiatWallet fiatWallet = new FiatWallet(new HashMap<FiatCurrency,Double>(), new Asset(new ArrayList<Stock>()));
 
             // History:
 
             Wallet wallet = new Wallet(Wname, Wdescription, IBAN, amount, refCurrency, fiatWallet,new CryptoWallet(), new History());
 
             wallets.add(wallet);
-        }
-        for(Wallet wallet : wallets){
-            System.out.println("--------------------------------------");
-            System.out.println(wallet.toString());
         }
 
 

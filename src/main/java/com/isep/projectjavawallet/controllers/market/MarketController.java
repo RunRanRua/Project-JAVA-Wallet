@@ -6,44 +6,45 @@ import com.crazzyghost.alphavantage.Config;
 import com.crazzyghost.alphavantage.parameters.Interval;
 import com.crazzyghost.alphavantage.parameters.OutputSize;
 import com.crazzyghost.alphavantage.timeseries.response.TimeSeriesResponse;
+import com.isep.projectjavawallet.bean.setting.Account;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
+import com.isep.projectjavawallet.dao.MarketDao;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
 
-public class MarketController {
-    private Label welcomeText;
 
-    protected void onSearchButtonClicked(){
-        Config cfg = Config.builder()
-                .key("SMJ44JXNNQM94SUDI")
-                .timeOut(10)
-                .build();
-        AlphaVantage.api().init(cfg);
+public class MarketController implements Initializable {
+     @FXML
+     private ListView<String> listView;
+     private ObservableList<String> observableList = FXCollections.observableArrayList();
 
-        AlphaVantage.api()
-                .timeSeries()
-                .intraday()
-                .forSymbol("IBM")
-                .interval(Interval.FIVE_MIN)
-                .outputSize(OutputSize.FULL)
-                .onSuccess(e -> {
-                    Platform.runLater(()-> handleSuccess((TimeSeriesResponse) e));
-                })
-                .onFailure(e -> {
-                    Platform.runLater(()-> handleFailure(e));
-                })
-                .fetch();
-    }
 
-    private void handleFailure(AlphaVantageException error) {
-        System.out.println("Function failed");
-    }
+     @Override
+     public void initialize(URL url, ResourceBundle resourceBundle) {
+          listView.setItems(observableList);
+          listView.setFixedCellSize(50);
 
-    private void handleSuccess(TimeSeriesResponse response) {
-        String text = String.valueOf(response.getStockUnits().get(1).getHigh());
-        welcomeText.setText(text);
-    }
+         String[] symbols = {"IBM","A","AMZN","GOOP","MSFT"};
+         Stock stock;
+         for (String symbol : symbols){
+             try {
+                 stock = new MarketDao().findStock(symbol);
+             } catch (SQLException e) {
+                 throw new RuntimeException(e);
+             }
 
+             observableList.add(stock.toString());
+         }
+     }
 }
