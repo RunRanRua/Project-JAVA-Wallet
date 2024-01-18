@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/mysql-8.2.0-winx64.msi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/mysql-connector-j-8.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/mysql-workbench-community-8.0.34-winx64.msi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/projectwallet_accounts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/projectwallet_currencies.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/projectwallet_markets.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/projectwallet_possededstocks.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBaseRessources/projectwallet_wallets.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectwallet_accounts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectwallet_currencies.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectwallet_markets.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectwallet_possededstocks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectwallet_wallets.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -44,36 +43,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AuthentificationTest.executor": "Run",
-    "Application.DataBase.executor": "Run",
-    "Application.Date.executor": "Run",
-    "Application.DateManager.executor": "Run",
-    "Application.IBANgeneration.executor": "Run",
-    "Application.UpdateManager.executor": "Run",
-    "Application.accountDBTest.executor": "Run",
-    "Application.accountTest.executor": "Run",
-    "Application.homeTest.executor": "Run",
-    "Application.tools.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/parki/Documents/GitHub/Project-JAVA-Wallet/DataBaseRessources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AuthentificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataBase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Date.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DateManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IBANgeneration.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UpdateManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.accountDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.accountTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.homeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tools.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/parki/Documents/GitHub/Project-JAVA-Wallet/DataBaseRessources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\parki\Documents\GitHub\Project-JAVA-Wallet\DataBaseRessources" />
