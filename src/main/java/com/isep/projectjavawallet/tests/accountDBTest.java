@@ -6,8 +6,11 @@ import com.isep.projectjavawallet.bean.wallet.CryptoWallet;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.FiatWallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.History;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.dao.AccountDao;
+import com.isep.projectjavawallet.dao.MarketDao;
 import com.isep.projectjavawallet.dao.WalletListDao;
+import com.isep.projectjavawallet.util.UpdateManager;
 
 import java.sql.SQLException;
 
@@ -40,6 +43,8 @@ public class accountDBTest {
         boolean b = new AccountDao().modifyMail(account,newMail);
         System.out.println(b);
          */
+        UpdateManager.updateCurrency();
+
 
 
 

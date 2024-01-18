@@ -1,10 +1,8 @@
 package com.isep.projectjavawallet.controllers.setting;
 
 import com.isep.projectjavawallet.dao.AccountDao;
-import com.isep.projectjavawallet.util.SceneManager;
 import com.isep.projectjavawallet.util.UpdateManager;
 import com.isep.projectjavawallet.util.UserManager;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -27,7 +25,7 @@ public class changeMailController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        currentMail.setText(UserManager.getHome().getProfil().getAccount().getMail());
+        currentMail.setText(UserManager.getHome().getProfile().getAccount().getMail());
     }
     public void confirmButtonClick() throws SQLException {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -44,7 +42,7 @@ public class changeMailController implements Initializable {
         }
 
         // modify in DB
-        boolean isSuccessful = new AccountDao().modifyMail(UserManager.getHome().getProfil().getAccount(), mail);
+        boolean isSuccessful = new AccountDao().modifyMail(UserManager.getHome().getProfile().getAccount(), mail);
         if (!isSuccessful){
             alert.setContentText("Failed, please contact the team...");
             alert.show();
@@ -52,7 +50,7 @@ public class changeMailController implements Initializable {
         }
 
         // modify in class
-        UserManager.getHome().getProfil().getAccount().setMail(mail);
+        UserManager.getHome().getProfile().getAccount().setMail(mail);
         // update
         UpdateManager.updateMail(mail);
 

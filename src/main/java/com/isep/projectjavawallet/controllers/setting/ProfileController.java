@@ -4,8 +4,6 @@ import com.isep.projectjavawallet.bean.setting.Profile;
 import com.isep.projectjavawallet.util.SceneManager;
 import com.isep.projectjavawallet.util.UpdateManager;
 import com.isep.projectjavawallet.util.UserManager;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -41,7 +39,7 @@ public class ProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // Initialize profile
-        profile = UserManager.getHome().getProfil();
+        profile = UserManager.getHome().getProfile();
         name.setText(profile.getAccount().getName());
         username.setText(profile.getAccount().getUsername());
         mail.setText(profile.getAccount().getMail());

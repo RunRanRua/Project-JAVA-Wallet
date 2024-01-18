@@ -28,11 +28,11 @@
                      <font>
                         <Font name="Agency FB" size="18.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="marketButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" prefHeight="205.0" prefWidth="261.0" text="Market" GridPane.rowIndex="1">
+                  <ToggleButton fx:id="marketButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#MarketButtonClick" prefHeight="205.0" prefWidth="261.0" text="Market" GridPane.rowIndex="1">
                      <font>
                         <Font name="Agency FB" size="18.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="currencyButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="241.0" text="Currency" GridPane.rowIndex="3">
+                  <ToggleButton fx:id="currencyButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#currencyButtonClick" prefHeight="170.0" prefWidth="241.0" text="Currency" GridPane.rowIndex="3">
                      <font>
                         <Font name="Agency FB" size="18.0" />
                      </font></ToggleButton>

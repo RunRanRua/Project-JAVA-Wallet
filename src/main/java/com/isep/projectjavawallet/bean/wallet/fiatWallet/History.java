@@ -1,7 +1,6 @@
 package com.isep.projectjavawallet.bean.wallet.fiatWallet;
 
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Action;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Bond;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 
 import java.util.ArrayList;
 
@@ -9,22 +8,17 @@ import java.util.ArrayList;
 
 /* completed */
 public class History {
-    private final ArrayList<Bond> bondHistory; 
-    private final ArrayList<Action> actionHistory; 
+    private final ArrayList<Stock> stockHistory;
     private final ArrayList<Transaction> transactionHistory;
 
     public History(){
-        bondHistory = new ArrayList<Bond>();
-        actionHistory = new ArrayList<Action>();
+        stockHistory = new ArrayList<Stock>();
         transactionHistory = new ArrayList<Transaction>();
     }
 
     // methods
-    public void addBondHistory(Bond bond){
-        bondHistory.add(bond);
-    }
-    public void addActionHistory(Action action){
-        actionHistory.add(action);
+    public void addActionHistory(Stock stock){
+        stockHistory.add(stock);
     }
     public void addTransactionHistory(Transaction transaction){
         transactionHistory.add(transaction);
@@ -33,20 +27,15 @@ public class History {
 
 
     // constructors
-    public History(ArrayList<Bond> bondHistory, ArrayList<Action> actionHistory, ArrayList<Transaction> transactionHistory) {
-        this.bondHistory = bondHistory;
-        this.actionHistory = actionHistory;
+    public History(ArrayList<Stock> stockHistory, ArrayList<Transaction> transactionHistory) {
+        this.stockHistory = stockHistory;
         this.transactionHistory = transactionHistory;
     }
 
 
     // getters
-    public ArrayList<Bond> getBondHistory() {
-        return bondHistory;
-    }
-
-    public ArrayList<Action> getActionHistory() {
-        return actionHistory;
+    public ArrayList<Stock> getStockHistory() {
+        return stockHistory;
     }
 
     public ArrayList<Transaction> getTransactionHistory() {

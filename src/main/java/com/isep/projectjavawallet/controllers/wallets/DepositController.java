@@ -43,6 +43,8 @@ public class DepositController implements Initializable {
         if (isSuccessful){
             double newAmount = UserManager.getCurrentWallet().getAmount() + amount;
 
+            // add the transaction in history
+
             // update in wallet (back-end)
             UserManager.getCurrentWallet().setAmount(newAmount);
             // update in wallet (front-end)

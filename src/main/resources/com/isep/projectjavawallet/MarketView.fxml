@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.market.MarketController">
+   <children>
+      <ListView fx:id="listView" layoutX="20.0" layoutY="81.0" prefHeight="421.0" prefWidth="778.0" />
+      <Label alignment="CENTER" layoutX="319.0" layoutY="21.0" prefHeight="50.0" prefWidth="181.0" text="Current Market">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

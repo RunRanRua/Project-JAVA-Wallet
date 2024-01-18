@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="322.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.buyStockConfirmController">
+   <children>
+      <Label layoutX="20.0" layoutY="133.0" prefHeight="34.0" prefWidth="117.0" text="You need to pay : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="201.0" prefHeight="34.0" prefWidth="117.0" text="You have yet : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="requiredAmount" alignment="CENTER" layoutX="141.0" layoutY="133.0" prefHeight="34.0" prefWidth="89.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="convertedAmount" alignment="CENTER" layoutX="141.0" layoutY="161.0" prefHeight="34.0" prefWidth="89.0" text="()">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="havingAmount" alignment="CENTER" layoutX="141.0" layoutY="201.0" prefHeight="34.0" prefWidth="89.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="14.0" prefHeight="34.0" prefWidth="117.0" text="Are you sure?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="257.0" mnemonicParsing="false" onAction="#yesButtonClick" prefHeight="51.0" prefWidth="83.0" text="YES">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="257.0" mnemonicParsing="false" onAction="#noButtonClick" prefHeight="51.0" prefWidth="83.0" text="NO">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="symbol" alignment="CENTER" layoutX="87.0" layoutY="54.0" prefHeight="34.0" prefWidth="58.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="54.0" prefHeight="34.0" prefWidth="58.0" text="Stock : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="88.0" prefHeight="34.0" prefWidth="73.0" text="Quantity : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantity" alignment="CENTER" layoutX="128.0" layoutY="88.0" prefHeight="34.0" prefWidth="58.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

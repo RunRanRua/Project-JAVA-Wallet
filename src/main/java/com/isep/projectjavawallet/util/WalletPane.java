@@ -142,7 +142,7 @@ public class WalletPane extends Pane {
         alert.showAndWait().ifPresent(response -> {
 
             if (response == ButtonType.OK) {
-                String username = UserManager.getHome().getProfil().getAccount().getUsername();
+                String username = UserManager.getHome().getProfile().getAccount().getUsername();
 
                 // remove from database
                 try {

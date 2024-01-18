@@ -1,14 +1,18 @@
 package com.isep.projectjavawallet.util;
 
+import com.isep.projectjavawallet.bean.currency.ExchangeRate;
 import com.isep.projectjavawallet.bean.currency.FiatCurrency;
+import com.isep.projectjavawallet.bean.market.Market;
 import com.isep.projectjavawallet.bean.setting.Account;
 import com.isep.projectjavawallet.bean.wallet.CryptoWallet;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.FiatWallet;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.History;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Action;
+import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Asset;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Bond;
+import com.isep.projectjavawallet.dao.CurrencyDao;
+import com.isep.projectjavawallet.dao.MarketDao;
+import com.isep.projectjavawallet.dao.StockDao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -39,55 +43,45 @@ public class DataLoading {
             String refCurrency = rs.getString("refCurrency");
 
 
-            // FiatWallet, History need to be initialized
-
             // FiatWallet:
-            FiatWallet fiatWallet = new FiatWallet(new HashMap<FiatCurrency,Double>(), new Asset(new ArrayList<Bond>(), new ArrayList<Action>()));
+            FiatWallet fiatWallet = new FiatWallet(new Asset(new ArrayList<Stock>()));
+            new StockDao().findStocks(username,IBAN,fiatWallet.getMyAsset().getStocks());
+
 
             // History:
 
-            Wallet wallet = new Wallet(Wname, Wdescription, IBAN, amount, refCurrency, fiatWallet,new CryptoWallet(), new History());
 
+            // Wallet
+            Wallet wallet = new Wallet(Wname, Wdescription, IBAN, amount, refCurrency, fiatWallet,new CryptoWallet(), new History());
             wallets.add(wallet);
         }
-        for(Wallet wallet : wallets){
-            System.out.println("--------------------------------------");
-            System.out.println(wallet.toString());
-        }
-
-
         con.close();
         ps.close();
     }
 
-
-    public Account findAccount(String username) throws SQLException {
-        // 1. connect database
-        con = DataBase.getConnection();
-
-        // 2. prepare statement
-        String searchUser = "SELECT * FROM accounts WHERE username = \"" + username + "\"";
-        ps = con.prepareStatement(searchUser);
-
-        // 3. retrieve data
-        ResultSet rs = ps.executeQuery();
-        String password = "", name = "", mail = "";
-        if (rs.next()){
-            password = rs.getString("password");
-            name = rs.getString("name");
-            mail = rs.getString("mail");
+    public static void loadMarketData(ArrayList<Stock> stocks) throws SQLException {
+        UpdateManager.updateMarket();
+        String[] symbols = {"IBM","A","AMZN","GOOP","MSFT"};
+        Stock stock;
+        for (String symbol : symbols) {
+            try {
+                stock = new MarketDao().findStock(symbol);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            stocks.add(stock);
         }
+    }
 
-        // 4. verify
-        if (password.isEmpty() || name.isEmpty() || mail.isEmpty()){
-            System.out.println("username: " + username + "   =======> NOT FOUND");
-            return null;
-        }
-        System.out.println("Search successful");
+    public static void loadCurrencyData(ArrayList<ExchangeRate> exchangeRates) throws SQLException {
+        UpdateManager.updateCurrency();
+        ExchangeRate USD2EUR = new CurrencyDao().findCurrency("USD","EUR");
+        ExchangeRate USD2CNY = new CurrencyDao().findCurrency("USD","CNY");
+        ExchangeRate EUR2CNY = new CurrencyDao().findCurrency("EUR","CNY");
 
-        con.close();
-        ps.close();
-        return new Account(username,password,name,mail);
+        exchangeRates.add(USD2EUR);
+        exchangeRates.add(USD2CNY);
+        exchangeRates.add(EUR2CNY);
     }
 
 }
