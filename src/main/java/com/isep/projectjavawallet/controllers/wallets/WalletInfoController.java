@@ -16,6 +16,8 @@ public class WalletInfoController implements Initializable {
     Label name;
     @FXML
     Label description;
+    @FXML
+    Label IBAN;
 
 
 
@@ -24,6 +26,7 @@ public class WalletInfoController implements Initializable {
         int id = UserManager.getWalletPaneID();
         name.setText(UserManager.getHome().getWallets().get(id).getWalletName());
         description.setText(UserManager.getHome().getWallets().get(id).getDescription());
+        IBAN.setText(UserManager.getHome().getWallets().get(id).getIBAN());
     }
 
     @FXML

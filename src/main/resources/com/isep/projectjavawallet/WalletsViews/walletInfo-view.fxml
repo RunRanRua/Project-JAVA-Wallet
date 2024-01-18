@@ -11,7 +11,7 @@
                 <Font name="System Italic" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="15.0" layoutY="142.0" prefHeight="35.0" prefWidth="134.0" text="Wallet Description">
+        <Label layoutX="14.0" layoutY="182.0" prefHeight="26.0" prefWidth="134.0" text="Wallet Description">
             <font>
                 <Font name="System Italic" size="15.0" />
             </font>
@@ -25,14 +25,24 @@
             <font>
                 <Font size="14.0" />
             </font></Label>
-        <Label fx:id="description" alignment="TOP_LEFT" layoutX="15.0" layoutY="177.0" prefHeight="156.0" prefWidth="284.0" text="Description" textFill="#0044ff">
+        <Label fx:id="description" alignment="TOP_LEFT" layoutX="15.0" layoutY="208.0" prefHeight="130.0" prefWidth="284.0" text="Description" textFill="#0044ff">
             <font>
                 <Font size="14.0" />
             </font>
         </Label>
-        <Button layoutX="109.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="35.0" prefWidth="95.0" text="Back">
+        <Button layoutX="110.0" layoutY="344.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="35.0" prefWidth="95.0" text="Back">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font></Button>
+      <Label layoutX="14.0" layoutY="125.0" prefHeight="35.0" prefWidth="134.0" text="Wallet IBAN">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="IBAN" layoutX="15.0" layoutY="153.0" prefHeight="35.0" prefWidth="284.0" text="IBAN" textFill="#0058ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
