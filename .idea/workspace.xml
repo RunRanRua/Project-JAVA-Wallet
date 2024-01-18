@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletInfo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/AuthentificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/tests/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +86,13 @@
       <recent name="com.isep.projectjavawallet" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AuthentificationTest">
-    <configuration name="AuthentificationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.AuthentificationTest" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DateManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.util.DateManager" />
       <module name="Project-JAVA-Wallet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.isep.projectjavawallet.tests.*" />
+          <option name="PATTERN" value="com.isep.projectjavawallet.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.util.DateManager" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.isep.projectjavawallet.tests.Main" />
       <module name="Project-JAVA-Wallet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.isep.projectjavawallet.util.*" />
+          <option name="PATTERN" value="com.isep.projectjavawallet.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,7 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthentificationTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.accountDBTest" />
         <item itemvalue="Application.DateManager" />
         <item itemvalue="Application.UpdateManager" />
