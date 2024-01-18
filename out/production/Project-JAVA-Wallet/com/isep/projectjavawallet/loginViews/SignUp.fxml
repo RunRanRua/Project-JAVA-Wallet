@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.loggin.SignUpController">
+   <children>
+      <Label layoutX="17.0" layoutY="76.0" prefHeight="32.0" prefWidth="60.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="28.0" prefHeight="32.0" prefWidth="109.0" text="username">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="130.0" prefHeight="32.0" prefWidth="109.0" text="Email">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="185.0" prefHeight="32.0" prefWidth="109.0" text="Password">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="240.0" prefHeight="32.0" prefWidth="71.0" text="Confirm ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="95.0" layoutY="31.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="between 3-15 character" />
+      <TextField fx:id="name" layoutX="95.0" layoutY="80.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="write down you name" />
+      <TextField fx:id="mail" layoutX="95.0" layoutY="133.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="yourMail@XXX.com" />
+      <TextField fx:id="pwd" layoutX="95.0" layoutY="188.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="between 6-15 character" />
+      <TextField fx:id="verify_pwd" layoutX="95.0" layoutY="243.0" onKeyPressed="#EnterPressed" prefHeight="25.0" prefWidth="228.0" promptText="rewrite your password" />
+      <Button layoutX="17.0" layoutY="288.0" mnemonicParsing="false" onAction="#createButtonOnClick" prefHeight="43.0" prefWidth="90.0" text="Create">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="125.0" layoutY="288.0" mnemonicParsing="false" onAction="#clearButtonOnClick" prefHeight="43.0" prefWidth="90.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="235.0" layoutY="288.0" mnemonicParsing="false" onAction="#BackonButtonClick" prefHeight="43.0" prefWidth="90.0" text="Back">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

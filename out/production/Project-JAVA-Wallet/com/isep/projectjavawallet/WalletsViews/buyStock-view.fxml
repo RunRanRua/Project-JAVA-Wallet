@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="322.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.buyStockController">
+
+    <children>
+        <TextField fx:id="quantity" layoutX="114.0" layoutY="152.0" onKeyPressed="#EnterPressed" prefHeight="40.0" prefWidth="192.0" promptText="0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button layoutX="35.0" layoutY="257.0" mnemonicParsing="false" onAction="#buyButtonClick" onKeyPressed="#EnterPressed" prefHeight="39.0" prefWidth="90.0" text="Buy">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="286.0" layoutY="257.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="40.0" prefWidth="90.0" text="Cancel">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="139.0" layoutY="24.0" prefHeight="27.0" prefWidth="128.0" text="Buy Stocks">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="currency1" alignment="CENTER" layoutX="24.0" layoutY="91.0" prefHeight="9.0" prefWidth="51.0" text="Stock">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="currency11" alignment="CENTER" layoutX="20.0" layoutY="159.0" prefHeight="25.0" prefWidth="70.0" text="Quantity">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="symbol" layoutX="114.0" layoutY="84.0" onKeyPressed="#EnterPressed" prefHeight="40.0" prefWidth="192.0" promptText="Stock symbol">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+    </children>
+
+</AnchorPane>

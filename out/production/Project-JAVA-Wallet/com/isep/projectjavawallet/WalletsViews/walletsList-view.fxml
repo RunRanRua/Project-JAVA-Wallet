@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="398.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.WalletsListController">
+    <children>
+        <ListView fx:id="listView" layoutX="-9.0" prefHeight="520.0" prefWidth="828.0" />
+    </children>
+</AnchorPane>

@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/MyAssetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/buyStockConfirmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/buyStockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/StockDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/buyStock-confirmation-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/buyStock-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/myAsset-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/market/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/market/Market.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/FiatWallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/bean/wallet/fiatWallet/assets/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/loggin/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/MarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/MarketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/market/StockController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/controllers/wallets/WalletDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/MarketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/dao/MarketDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataLoading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/DataLoading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UpdateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UpdateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/projectjavawallet/util/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/WalletsViews/walletData.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
