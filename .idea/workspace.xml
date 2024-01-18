@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="" />
+    <list default="true" id="0d8677f9-4735-49da-92de-538764777bb2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-JAVA-Wallet/com/isep/projectjavawallet/loginViews/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-JAVA-Wallet/com/isep/projectjavawallet/loginViews/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-JAVA-Wallet/com/isep/projectjavawallet/loginViews/authentication.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-JAVA-Wallet/com/isep/projectjavawallet/loginViews/authentication.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/authentication.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/isep/projectjavawallet/loginViews/authentication.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
