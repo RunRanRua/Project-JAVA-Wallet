@@ -24,6 +24,7 @@ DROP TABLE IF EXISTS `accounts`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `accounts` (
   `username` varchar(15) NOT NULL,
+  `password` varchar(15) NOT NULL,
   `name` varchar(15) NOT NULL,
   `mail` varchar(40) NOT NULL,
   PRIMARY KEY (`username`),

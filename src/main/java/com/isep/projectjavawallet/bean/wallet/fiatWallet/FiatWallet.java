@@ -9,9 +9,7 @@ import java.util.HashMap;
 
 
 
-/* uncompleted:
-* 2 Methods
-* */
+
 public class FiatWallet {
     private Asset myAsset;
 

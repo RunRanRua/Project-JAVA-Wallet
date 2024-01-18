@@ -3,9 +3,7 @@ package com.isep.projectjavawallet.bean.wallet.fiatWallet.assets;
 import java.util.ArrayList;
 
 
-/* Uncompleted
-*       - 3 methods
-*/
+
 public class Asset {
     private ArrayList<Stock> stocks;
 
