@@ -31,7 +31,13 @@
             <Font size="18.0" />
          </font>
       </TextArea>
-      <Button layoutX="38.0" layoutY="347.0" mnemonicParsing="false" onAction="#confirmButtonClick" prefHeight="35.0" prefWidth="68.0" text="Confirm" />
-      <Button fx:id="cancelButton" layoutX="210.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="35.0" prefWidth="68.0" text="Cancel" />
+      <Button layoutX="38.0" layoutY="347.0" mnemonicParsing="false" onAction="#confirmButtonClick" prefHeight="35.0" prefWidth="68.0" text="Confirm">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="210.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="35.0" prefWidth="68.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

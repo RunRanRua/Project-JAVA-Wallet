@@ -6,29 +6,29 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallets.DepositController">
    <children>
-      <TextField fx:id="depositAmount" layoutX="38.0" layoutY="84.0">
+      <TextField fx:id="depositAmount" layoutX="42.0" layoutY="93.0" prefHeight="31.0" prefWidth="223.0">
          <font>
-            <Font size="18.0" />
+            <Font size="15.0" />
          </font>
       </TextField>
-      <Button layoutX="99.0" layoutY="165.0" mnemonicParsing="false" onAction="#depositButtonClick" text="Deposit">
+      <Button layoutX="69.0" layoutY="172.0" mnemonicParsing="false" onAction="#depositButtonClick" prefHeight="39.0" prefWidth="75.0" text="Deposit">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="232.0" layoutY="165.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="40.0" prefWidth="90.0" text="Cancel">
+      <Button layoutX="248.0" layoutY="172.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="39.0" prefWidth="75.0" text="Cancel">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="142.0" layoutY="57.0" text="Deposit amount">
+      <Label alignment="CENTER" layoutX="100.0" layoutY="18.0" prefHeight="40.0" prefWidth="202.0" text="Deposit amount">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <Label fx:id="currency" alignment="CENTER" layoutX="287.0" layoutY="84.0" prefHeight="39.0" prefWidth="70.0" text="AAA">
+      <Label fx:id="currency" alignment="CENTER" layoutX="286.0" layoutY="89.0" prefHeight="39.0" prefWidth="70.0" text="AAA">
          <font>
-            <Font size="22.0" />
+            <Font size="18.0" />
          </font>
       </Label>
    </children>
