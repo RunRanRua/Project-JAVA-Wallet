@@ -9,6 +9,7 @@ import com.crazzyghost.alphavantage.timeseries.response.TimeSeriesResponse;
 import com.isep.projectjavawallet.bean.setting.Account;
 import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.dao.MarketDao;
+import com.isep.projectjavawallet.util.UserManager;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -35,15 +36,7 @@ public class MarketController implements Initializable {
           listView.setItems(observableList);
           listView.setFixedCellSize(50);
 
-         String[] symbols = {"IBM","A","AMZN","GOOP","MSFT"};
-         Stock stock;
-         for (String symbol : symbols){
-             try {
-                 stock = new MarketDao().findStock(symbol);
-             } catch (SQLException e) {
-                 throw new RuntimeException(e);
-             }
-
+          for (Stock stock : UserManager.getHome().getMarket().getActions()){
              observableList.add(stock.toString());
          }
      }

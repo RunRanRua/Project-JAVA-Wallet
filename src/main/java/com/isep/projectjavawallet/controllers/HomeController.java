@@ -10,6 +10,7 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -72,7 +73,6 @@ public class HomeController implements Initializable {
             }else{
                 SceneManager.changeSceneRightPart( SceneManager.getCurrentRightPart_walletsView() );
             }
-            // load sub-window's FXML
 
 
 
@@ -82,8 +82,28 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    public void MarketButtonClick(){
-        SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/MarketView.fxml");
+    public void MarketButtonClick() {
+        try {
+            // load sub-window's FXML
+            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/MarketView.fxml"));
+            rightPartPane.getChildren().clear();
+            rightPartPane.getChildren().setAll(pane2);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void currencyButtonClick(){
+        try {
+            // load sub-window's FXML
+            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/currency-View.fxml"));
+            rightPartPane.getChildren().clear();
+            rightPartPane.getChildren().setAll(pane2);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

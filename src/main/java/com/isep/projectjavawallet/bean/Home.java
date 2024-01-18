@@ -11,7 +11,7 @@ public class Home {
     private Profile profile;
     private Market market;
     private ArrayList<Wallet> wallets;
-    private ExchangeRate exchangeRate;
+    private ArrayList<ExchangeRate> exchangeRates;
 
 
 
@@ -26,15 +26,15 @@ public class Home {
     // constructors
 
     public Home(){}
-    public Home(Profile profile, Market market, ArrayList<Wallet> wallets, ExchangeRate exchangeRate) {
+    public Home(Profile profile, Market market, ArrayList<Wallet> wallets, ArrayList<ExchangeRate> exchangeRates) {
         this.profile = profile;
         this.market = market;
         this.wallets = wallets;
-        this.exchangeRate = exchangeRate;
+        this.exchangeRates = exchangeRates;
     }
 
     // getters
-    public Profile getProfil() {
+    public Profile getProfile() {
         return profile;
     }
 
@@ -46,7 +46,7 @@ public class Home {
         return wallets;
     }
 
-    public ExchangeRate getExchangeRate() {
-        return exchangeRate;
+    public ArrayList<ExchangeRate> getExchangeRates() {
+        return exchangeRates;
     }
 }

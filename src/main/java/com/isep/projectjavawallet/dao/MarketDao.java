@@ -46,9 +46,9 @@ public class MarketDao {
         con = DataBase.getConnection();
 
         // 2. prepare statement
-        String insert = "SELECT *  FROM markets WHERE symbol = \"" + symbol + "\" AND Date = \"" + DateManager.printDate() + "\"";
+        String statement = "SELECT *  FROM markets WHERE symbol = \"" + symbol + "\" AND Date = \"" + DateManager.getDate() + "\"";
 
-        ps = con.prepareStatement(insert);
+        ps = con.prepareStatement(statement);
 
         // 3- execute
         ResultSet rs = ps.executeQuery();
@@ -58,7 +58,7 @@ public class MarketDao {
             stock.setSymbol(symbol);
             stock.setPrice(rs.getInt("price"));
             stock.setVolume(rs.getInt("volume"));
-            stock.setDate(rs.getString("Date"));
+            stock.setDate(rs.getString("date"));
             con.close();
             ps.close();
             return stock;
@@ -67,5 +67,24 @@ public class MarketDao {
         con.close();
         ps.close();
         return null;
+    }
+
+    public boolean isStockUpdated(String symbol) throws SQLException {
+        // 1- Start connect dataBase
+        con = DataBase.getConnection();
+
+        // 2. prepare statement
+        String statement = "SELECT *  FROM markets WHERE symbol = \"" + symbol + "\" AND Date = \"" + DateManager.getDate() + "\"";
+
+        ps = con.prepareStatement(statement);
+
+        // 3- execute
+        ResultSet rs = ps.executeQuery();
+
+        boolean ans = rs.next();
+
+        con.close();
+        ps.close();
+        return ans;
     }
 }

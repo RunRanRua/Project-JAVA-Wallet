@@ -1,19 +1,13 @@
 package com.isep.projectjavawallet.controllers.setting;
 
 import com.isep.projectjavawallet.dao.AccountDao;
-import com.isep.projectjavawallet.util.UpdateManager;
 import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.net.URL;
 import java.sql.SQLException;
-import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 public class changePWDController {
@@ -35,7 +29,7 @@ public class changePWDController {
         String verifyPWD_str = verifyPWD.getText();
         String newPWD_str = newPWD.getText();
         String verifyNewPWD_str = verifyNewPWD.getText();
-        String currentPWD = UserManager.getHome().getProfil().getAccount().getPassword();
+        String currentPWD = UserManager.getHome().getProfile().getAccount().getPassword();
 
         boolean isSamePWD = currentPWD.equals(verifyPWD_str);
         boolean isSameNewPWD = newPWD_str.equals(verifyNewPWD_str);
@@ -54,7 +48,7 @@ public class changePWDController {
 
 
         // modify in DB
-        boolean isSuccessful = new AccountDao().modifyPassword(UserManager.getHome().getProfil().getAccount(), newPWD_str);
+        boolean isSuccessful = new AccountDao().modifyPassword(UserManager.getHome().getProfile().getAccount(), newPWD_str);
         if (!isSuccessful){
             alert.setContentText("Failed, please contact the team...");
             alert.show();
@@ -62,7 +56,7 @@ public class changePWDController {
         }
 
         // modify in class
-        UserManager.getHome().getProfil().getAccount().setPassword(newPWD_str);
+        UserManager.getHome().getProfile().getAccount().setPassword(newPWD_str);
 
 
 

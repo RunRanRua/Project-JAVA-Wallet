@@ -43,6 +43,7 @@ public class accountDBTest {
         boolean b = new AccountDao().modifyMail(account,newMail);
         System.out.println(b);
          */
+        UpdateManager.updateCurrency();
 
 
 

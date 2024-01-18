@@ -27,7 +27,7 @@ public class AddNewWalletController {
         String Wname = name.getText();
         String Wdescription = description.getText();
         Wallet wallet = new Wallet(Wname,Wdescription,new FiatWallet(), new CryptoWallet(), new History());
-        String username = UserManager.getHome().getProfil().getAccount().getUsername();
+        String username = UserManager.getHome().getProfile().getAccount().getUsername();
         // Add contents into SQL
         boolean isSuccessful = new WalletListDao().insertWallet(username,wallet);
         if (isSuccessful){

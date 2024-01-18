@@ -12,7 +12,7 @@ public class Stock {
    private String symbol;
    private int price;
    private int volume;
-   private String date = DateManager.printDate();
+   private String date = DateManager.getDate();
 
 
     @Override
