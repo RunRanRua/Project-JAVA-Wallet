@@ -66,8 +66,9 @@ public class UpdateManager {
                     .getString("5. volume"); // data we want
 
 
+
             stock.setSymbol(symbol);
-            stock.setPrice(Integer.parseInt(price));
+            stock.setPrice( (int) Double.parseDouble(price));
             stock.setVolume(Integer.parseInt(volume));
             stock.setDate(DateManager.getDate());
         } catch (IOException e){
@@ -100,6 +101,7 @@ public class UpdateManager {
             ExchangeRate USD2CNY = getCurrencyData("USD","CNY");
             ExchangeRate EUR2CNY = getCurrencyData("EUR","CNY");
 
+            System.out.println();
             ExchangeRate[] rates = {USD2EUR,USD2CNY,EUR2CNY};
             for (ExchangeRate rate : rates) {
                 boolean a = new CurrencyDao().insertRate(rate);
@@ -125,6 +127,7 @@ public class UpdateManager {
             exchangeRate.setFromCurrency(fromCurrency);
             exchangeRate.setToCurrency(toCurrency);
             exchangeRate.setRate(Double.parseDouble(rate));
+            exchangeRate.setDate(DateManager.getDate());
 
         } catch (IOException e){
             e.printStackTrace();;
