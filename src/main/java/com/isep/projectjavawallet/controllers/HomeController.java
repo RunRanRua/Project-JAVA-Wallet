@@ -1,22 +1,21 @@
 package com.isep.projectjavawallet.controllers;
 
 import com.isep.projectjavawallet.util.SceneManager;
-import com.isep.projectjavawallet.util.UserManager;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
-
-
     // Buttons
     @FXML
     private ToggleButton profileButton;
@@ -25,26 +24,57 @@ public class HomeController implements Initializable {
     @FXML
     private ToggleButton walletsButton;
     @FXML
-    private ToggleButton currencyButton;
-    @FXML
-    public Button LogoutButton;
-
+    public Button logOutButton;
 
     @FXML
     private AnchorPane rightPartPane;
+
+    @FXML
+    ImageView profileIcon;
+    @FXML
+    ImageView walletsIcon;
+    @FXML
+    ImageView marketIcon;
+    @FXML
+    ImageView logOutIcon;
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        UserManager.setHomeController(this);
+        SceneManager.setHomeController(this);
         ToggleGroup toggleGroup = new ToggleGroup();
         profileButton.setToggleGroup(toggleGroup);
         marketButton.setToggleGroup(toggleGroup);
         walletsButton.setToggleGroup(toggleGroup);
-        currencyButton.setToggleGroup(toggleGroup);
         walletsButton.setSelected(true);
         walletsButtonClick();
+
+        profileIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(javafx.scene.input.MouseEvent event) {
+                profileButton.fire();
+            }
+        });
+        walletsIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(javafx.scene.input.MouseEvent event) {
+                walletsButton.fire();
+            }
+        });
+        marketIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(javafx.scene.input.MouseEvent event) {
+                marketButton.fire();
+            }
+        });
+        logOutIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(javafx.scene.input.MouseEvent event) {
+                logOutButton.fire();
+            }
+        });
+
     }
 
 
@@ -52,7 +82,7 @@ public class HomeController implements Initializable {
     public void profileButtonClick(){
         try {
             // load sub-window's FXML
-            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/settingViews/profile-view.fxml"));
+            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/profilePart/profile-view.fxml"));
             rightPartPane.getChildren().clear();
             rightPartPane.getChildren().setAll(pane2);
 
@@ -66,14 +96,7 @@ public class HomeController implements Initializable {
     @FXML
     public void walletsButtonClick(){
         try {
-
-            if(ini){
-                SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/WalletsViews/walletsList-view.fxml");
-                ini = false;
-            }else{
-                SceneManager.changeSceneRightPart( SceneManager.getCurrentRightPart_walletsView() );
-            }
-
+            SceneManager.changeSceneRightPart("/com/isep/projectjavawallet/waletPart/walletList-view.fxml");
 
 
         } catch (Exception e) {
@@ -82,10 +105,10 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    public void MarketButtonClick() {
+    public void marketButtonClick() {
         try {
             // load sub-window's FXML
-            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/MarketView.fxml"));
+            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/marketPart/market-view.fxml"));
             rightPartPane.getChildren().clear();
             rightPartPane.getChildren().setAll(pane2);
 
@@ -94,22 +117,13 @@ public class HomeController implements Initializable {
         }
     }
 
-    public void currencyButtonClick(){
-        try {
-            // load sub-window's FXML
-            AnchorPane pane2 = FXMLLoader.load(getClass().getResource("/com/isep/projectjavawallet/currency-View.fxml"));
-            rightPartPane.getChildren().clear();
-            rightPartPane.getChildren().setAll(pane2);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @FXML
-    public void LogoutButtonClick(){
-        SceneManager.changeScene("/com/isep/projectjavawallet/loginViews/authentication.fxml","Authentification");
+    public void logoutButtonClick(){
+        SceneManager.changeScene("/com/isep/projectjavawallet/loginPart/authentication.fxml","Authentification");
     }
+
+
 
 
     public AnchorPane getRightPartPane() {

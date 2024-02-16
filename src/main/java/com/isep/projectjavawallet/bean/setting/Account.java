@@ -1,15 +1,31 @@
 package com.isep.projectjavawallet.bean.setting;
 
+import com.isep.projectjavawallet.util.AccountVerification;
 
-
-
-
-/* completed */
 public class Account {
     private String username;
     private String password;
     private String name;
     private String mail;
+
+
+    // methods
+    public void modifyPWD(String password){
+        if(AccountVerification.isValidPWD(password)){
+            this.password = password;
+        }else{
+            System.out.println("modify password failed...");
+        }
+    }
+    public void modifymail(String mail){
+        if(AccountVerification.isValidMail(mail)) {
+            this.mail = mail;
+        }else{
+            System.out.println("modify mail failed...");
+        }
+    }
+
+
 
 
 
@@ -23,46 +39,31 @@ public class Account {
         this.mail = mail;
     }
 
-    // getters & setters
+
+
+    // getters + setters
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getMail() {
         return mail;
     }
-
     public void setMail(String mail) {
         this.mail = mail;
-    }
-
-    @Override
-    public String toString() {
-        return "Account{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", mail='" + mail + '\'' +
-                '}';
     }
 }

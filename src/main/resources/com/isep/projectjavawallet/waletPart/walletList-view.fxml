@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.WalletListController">
+   <children>
+      <Label layoutX="247.0" layoutY="43.0" text="Wallet List" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="127.0" mnemonicParsing="false" onAction="#addButtonClick" prefHeight="52.0" prefWidth="57.0">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/addIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="118.0" layoutY="127.0" mnemonicParsing="false" onAction="#removeButtonClick" prefHeight="52.0" prefWidth="57.0">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/delIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="472.0" layoutY="127.0" mnemonicParsing="false" onAction="#infoButtonClick" prefHeight="52.0" prefWidth="57.0">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/infoIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="553.0" layoutY="127.0" mnemonicParsing="false" onAction="#enterButtonClick" prefHeight="52.0" prefWidth="57.0">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/enterIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ListView fx:id="listView" layoutX="27.0" layoutY="195.0" prefHeight="450.0" prefWidth="582.0" />
+   </children>
+</AnchorPane>

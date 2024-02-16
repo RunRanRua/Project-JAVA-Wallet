@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.profile.ProfileController">
+   <children>
+      <ImageView fitHeight="193.0" fitWidth="213.0" layoutX="219.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/userIcon.png" />
+         </image></ImageView>
+      <Label fx:id="name" alignment="CENTER" layoutX="135.0" layoutY="261.0" prefHeight="35.0" prefWidth="361.0" text="Name">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="229.0" layoutY="28.0" text="My Profile" underline="true">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="330.0" text="username">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="385.0" text="mail">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="451.0" text="password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="451.0" prefHeight="35.0" prefWidth="323.0" text="*****************">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="mail" layoutX="171.0" layoutY="385.0" prefHeight="35.0" prefWidth="307.0" text="yourmail">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="170.0" layoutY="330.0" prefHeight="35.0" prefWidth="307.0" text="username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="506.0" layoutY="381.0" mnemonicParsing="false" onAction="#resetMailButtonClick" prefHeight="26.0" prefWidth="101.0" text="reset">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="506.0" layoutY="446.0" mnemonicParsing="false" onAction="#resetPWDButtonClick" prefHeight="44.0" prefWidth="101.0" text="reset">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="51.0" layoutY="575.0" mnemonicParsing="false" onAction="#policyButtonClick" prefHeight="51.0" prefWidth="118.0" text="Policy">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="256.0" layoutY="575.0" mnemonicParsing="false" onAction="#aboutButtonClick" prefHeight="51.0" prefWidth="118.0" text="About">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="468.0" layoutY="575.0" mnemonicParsing="false" onAction="#helpButtonClick" prefHeight="51.0" prefWidth="118.0" text="Help">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

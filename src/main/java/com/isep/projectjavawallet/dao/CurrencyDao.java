@@ -1,7 +1,7 @@
 package com.isep.projectjavawallet.dao;
 
-import com.isep.projectjavawallet.bean.currency.ExchangeRate;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
+
+import com.isep.projectjavawallet.bean.market.ExchangeRate;
 import com.isep.projectjavawallet.util.DataBase;
 import com.isep.projectjavawallet.util.DateManager;
 
@@ -75,15 +75,14 @@ public class CurrencyDao {
         // 3- execute
         ResultSet rs = ps.executeQuery();
 
-        ExchangeRate exchangeRate = new ExchangeRate();
+        String rate;
+        String date;
         if (rs.next()){
-            exchangeRate.setFromCurrency(fromCurrency);
-            exchangeRate.setToCurrency(toCurrency);
-            exchangeRate.setRate(Double.parseDouble(rs.getString("rate")));
-            exchangeRate.setDate(rs.getString("date"));
+            rate = rs.getString("rate");
+            date = rs.getString("date");
             con.close();
             ps.close();
-            return exchangeRate;
+            return new ExchangeRate(fromCurrency,toCurrency,Double.parseDouble(rate), date);
         }
         con.close();
         ps.close();

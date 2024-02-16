@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="513.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallet.InfoController">
+   <children>
+      <Label layoutX="243.0" layoutY="36.0" text="Wallet Info" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="131.0" text="Wallet Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="213.0" text="IBAN">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="295.0" text="Description">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="wName" layoutX="198.0" layoutY="131.0" prefHeight="35.0" prefWidth="387.0" text="name----">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="IBAN" layoutX="199.0" layoutY="213.0" prefHeight="35.0" prefWidth="395.0" text="AAAAAAAAAAAAAAAAAAAAAAAAAAA">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" alignment="TOP_LEFT" layoutX="37.0" layoutY="343.0" prefHeight="141.0" prefWidth="553.0" text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

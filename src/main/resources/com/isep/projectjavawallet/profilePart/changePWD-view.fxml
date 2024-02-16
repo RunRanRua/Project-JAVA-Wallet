@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.profile.ResetPWDController">
+    <children>
+        <Label layoutX="195.0" layoutY="51.0" text="Reset Your Password" underline="true">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+      <Label layoutX="40.0" layoutY="178.0" text="current pwd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+        <Label layoutX="55.0" layoutY="259.0" text="new pwd">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="335.0" text="confirm pwd">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <PasswordField fx:id="pwd" layoutX="195.0" layoutY="173.0" prefHeight="44.0" prefWidth="402.0" promptText="your password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="newPWD" layoutX="195.0" layoutY="254.0" prefHeight="44.0" prefWidth="402.0" promptText="your new password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="confirmPWD" layoutX="195.0" layoutY="330.0" prefHeight="44.0" prefWidth="402.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+        <Button layoutX="90.0" layoutY="562.0" mnemonicParsing="false" onAction="#confirmButtonClick" prefHeight="57.0" prefWidth="123.0" text="Confirm">
+            <font>
+                <Font size="25.0" />
+            </font></Button>
+        <Button layoutX="417.0" layoutY="562.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="57.0" prefWidth="123.0" text="Back">
+            <font>
+                <Font size="25.0" />
+            </font></Button>
+    </children>
+</AnchorPane>

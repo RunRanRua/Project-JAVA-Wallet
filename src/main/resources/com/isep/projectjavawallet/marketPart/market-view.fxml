@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.market.MarketController">
+   <children>
+      <Label layoutX="268.0" layoutY="37.0" text="Market" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="90.0" prefHeight="45.0" prefWidth="57.0" text="Tips:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="128.0" prefHeight="67.0" prefWidth="542.0" text="This is a page used to display some of the stocks within the stock market as well as some of the currency exchange rates." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="195.0" prefHeight="100.0" prefWidth="542.0" text="Due to some limitations of the unpaid API we use, only individual content can be displayed here, and will be stored in a database, so please forgive us." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="128.0" prefHeight="22.0" prefWidth="20.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="195.0" prefHeight="22.0" prefWidth="20.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="12.0" layoutY="303.0" prefHeight="348.0" prefWidth="607.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Stocks">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="574.0">
+                     <children>
+                        <ListView fx:id="listView_stock" layoutY="1.0" prefHeight="318.0" prefWidth="607.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Currencies">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listView_currency" layoutY="1.0" prefHeight="318.0" prefWidth="607.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

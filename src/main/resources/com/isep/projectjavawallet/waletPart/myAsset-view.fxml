@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallet.AssetController">
+    <children>
+        <Button layoutX="239.0" layoutY="553.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="54.0" prefWidth="152.0" text="Back">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <ListView fx:id="listView" layoutX="20.0" layoutY="97.0" prefHeight="397.0" prefWidth="592.0" />
+        <Label alignment="CENTER" layoutX="239.0" layoutY="24.0" prefHeight="36.0" prefWidth="152.0" text="My asset" underline="true">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Button layoutX="460.0" layoutY="553.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="54.0" prefWidth="152.0" text="Go to Sell">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+      <Button layoutX="20.0" layoutY="553.0" mnemonicParsing="false" onAction="#purchaseButtonClick" prefHeight="54.0" prefWidth="152.0" text="Go to buy">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

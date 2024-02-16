@@ -38,7 +38,7 @@ CREATE TABLE `accounts` (
 
 LOCK TABLES `accounts` WRITE;
 /*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
-INSERT INTO `accounts` VALUES ('username','123456','A','Test@google.fr'),('username2','123456','BB','mailTest@sq.fs'),('username5','321654','E','mailXX'),('username6','1','E','mail@fr5');
+INSERT INTO `accounts` VALUES ('Admin','123456','Administrator','admin@test.com');
 /*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-19  9:35:17
+-- Dump completed on 2024-02-16 22:28:53

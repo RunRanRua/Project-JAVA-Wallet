@@ -20,12 +20,12 @@ public class IBANgeneration {
                 char randomChar = characters.charAt(index);
                 randomIBAN.append(randomChar);
             }
-        }while (isIBANexisted(randomIBAN.toString()));
+        }while (isIBANExisted(randomIBAN.toString()));
 
         return randomIBAN.toString();
     }
 
-    private static boolean isIBANexisted(String IBAN) throws SQLException {
+    public static boolean isIBANExisted(String IBAN) throws SQLException {
         Connection con = DataBase.getConnection();
 
         String selectIBAN = "SELECT IBAN from wallets";

@@ -1,32 +1,8 @@
 package com.isep.projectjavawallet.bean.setting;
 
 
-
-
-/* uncompleted
-        - contents
-*/
 public class About {
-    private static String aboutApp;
-    private static String aboutTeam;
-
-
-
-
-
-
-    // constructor
-    public About(){
-        aboutApp = "our APP is not released yet";
-        aboutTeam = "We are G10 JAVA trinome team";
-    }
-
-    // getters
-    public String getAboutApp() {
-        return aboutApp;
-    }
-
-    public String getAboutTeam() {
-        return aboutTeam;
-    }
+    public static String aboutApp = "The application is a school project to simulate an online wallet.";
+    public static String aboutTeam = "We are G10-JAVA-trinome team.";
 }
+

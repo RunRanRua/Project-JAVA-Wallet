@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallet.DeleteController">
+    <children>
+        <Label layoutX="216.0" layoutY="38.0" text="Remove Wallet" underline="true">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="131.0" text="Wallet Name">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="181.0" text="Description">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="wName" layoutX="198.0" layoutY="131.0" prefHeight="35.0" prefWidth="387.0" text="name----">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="description" alignment="TOP_LEFT" layoutX="38.0" layoutY="229.0" prefHeight="141.0" prefWidth="569.0" text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="96.0" layoutY="544.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="65.0" prefWidth="147.0" text="Back">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Button>
+      <Label alignment="TOP_LEFT" layoutX="122.0" layoutY="444.0" prefHeight="80.0" prefWidth="387.0" text="Are you sure to remove this wallet ? Your data will lost once you confirm." textFill="RED" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="392.0" layoutY="544.0" mnemonicParsing="false" onAction="#confirmButtonClick" text="Confirm">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

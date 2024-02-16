@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.profile.PolicyController">
+    <children>
+        <Label layoutX="284.0" layoutY="46.0" text="Policy" underline="true">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="personalInfo" alignment="TOP_LEFT" layoutX="48.0" layoutY="208.0" prefHeight="88.0" prefWidth="550.0" text="text1" textOverrun="CLIP" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="172.0" text="Personal Information">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="security" alignment="TOP_LEFT" layoutX="48.0" layoutY="323.0" prefHeight="88.0" prefWidth="550.0" text="text2" textOverrun="CLIP" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="43.0" layoutY="287.0" text="Security">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Button layoutX="270.0" layoutY="583.0" mnemonicParsing="false" onAction="#backButtonClick" text="BACK">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+      <Label fx:id="accountDeletion" alignment="TOP_LEFT" layoutX="48.0" layoutY="460.0" prefHeight="88.0" prefWidth="550.0" text="text2" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="424.0" text="Account Deletion">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

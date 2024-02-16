@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallet.WalletController">
+    <children>
+        <Button layoutX="72.0" layoutY="452.0" mnemonicParsing="false" onAction="#depositButtonClick" prefHeight="51.0" prefWidth="169.0" text="Deposit">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="391.0" layoutY="543.0" mnemonicParsing="false" onAction="#infoButtonClick" prefHeight="51.0" prefWidth="169.0" text="Wallet Info">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="391.0" layoutY="452.0" mnemonicParsing="false" onAction="#transferButtonClick" prefHeight="51.0" prefWidth="169.0" text="Transfer">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="72.0" layoutY="543.0" mnemonicParsing="false" onAction="#assetButtonClick" prefHeight="51.0" prefWidth="169.0" text="My Assets">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="72.0" layoutY="367.0" mnemonicParsing="false" onAction="#historyButtonClick" prefHeight="51.0" prefWidth="486.0" text="History of Transactions">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Label fx:id="balance" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="36.0" prefHeight="35.0" prefWidth="441.0" text="0.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="currency" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="71.0" prefHeight="35.0" prefWidth="418.0" text="Currency">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Button layoutX="271.0" layoutY="543.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <LineChart fx:id="chart" animated="false" layoutX="72.0" layoutY="128.0" legendVisible="false" prefHeight="226.0" prefWidth="486.0">
+        <xAxis>
+          <CategoryAxis animated="false" label="time" prefHeight="32.0" prefWidth="399.0">
+               <tickLabelFont>
+                  <Font size="7.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="balance" side="LEFT" />
+        </yAxis>
+      </LineChart>
+    </children>
+</AnchorPane>

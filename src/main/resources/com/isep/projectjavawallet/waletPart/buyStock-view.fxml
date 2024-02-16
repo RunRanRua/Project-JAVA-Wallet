@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.projectjavawallet.controllers.wallet.BuyStockController">
+
+    <children>
+        <TextField fx:id="symbol" layoutX="256.0" layoutY="177.0" onKeyPressed="#EnterPressed" prefHeight="44.0" prefWidth="275.0" promptText="Stock symbol">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="quantity" layoutX="257.0" layoutY="257.0" onKeyPressed="#EnterPressed" prefHeight="44.0" prefWidth="275.0" promptText="0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+      <Button layoutX="252.0" layoutY="319.0" mnemonicParsing="false" onAction="#getPriceButtonClick" text="Get Price">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+        <Button layoutX="83.0" layoutY="547.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="52.0" prefWidth="138.0" text="Cancel">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="buyButton" disable="true" layoutX="394.0" layoutY="547.0" mnemonicParsing="false" onAction="#buyButtonClick" onKeyPressed="#EnterPressed" prefHeight="52.0" prefWidth="138.0" text="Buy">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="192.0" layoutY="43.0" prefHeight="45.0" prefWidth="247.0" text="Buy Stocks" underline="true">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="currency1" alignment="CENTER" layoutX="99.0" layoutY="182.0" prefHeight="35.0" prefWidth="81.0" text="Stock">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="currency11" alignment="CENTER" layoutX="80.0" layoutY="262.0" prefHeight="35.0" prefWidth="118.0" text="Quantity">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <Label layoutX="42.0" layoutY="461.0" text="Your current balance">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentBalance" alignment="CENTER" layoutX="280.0" layoutY="461.0" prefHeight="35.0" prefWidth="199.0" text="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="479.0" layoutY="461.0" prefHeight="35.0" prefWidth="59.0" text="EUR">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="401.0" text="Total price">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPrice" alignment="CENTER" layoutX="280.0" layoutY="401.0" prefHeight="35.0" prefWidth="199.0" text="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="479.0" layoutY="401.0" prefHeight="35.0" prefWidth="59.0" text="EUR">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

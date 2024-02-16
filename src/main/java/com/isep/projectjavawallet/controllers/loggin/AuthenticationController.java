@@ -1,16 +1,15 @@
 package com.isep.projectjavawallet.controllers.loggin;
 
 import com.isep.projectjavawallet.bean.Home;
-import com.isep.projectjavawallet.bean.currency.ExchangeRate;
+import com.isep.projectjavawallet.bean.market.ExchangeRate;
 import com.isep.projectjavawallet.bean.market.Market;
+import com.isep.projectjavawallet.bean.market.Stock;
 import com.isep.projectjavawallet.bean.setting.Account;
 import com.isep.projectjavawallet.bean.setting.Profile;
 import com.isep.projectjavawallet.bean.wallet.Wallet;
-import com.isep.projectjavawallet.bean.wallet.fiatWallet.assets.Stock;
 import com.isep.projectjavawallet.dao.AccountDao;
-import com.isep.projectjavawallet.util.DataLoading;
+import com.isep.projectjavawallet.util.AccountVerification;
 import com.isep.projectjavawallet.util.SceneManager;
-import com.isep.projectjavawallet.util.UserManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
@@ -22,7 +21,6 @@ import javafx.scene.input.KeyEvent;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public class AuthenticationController {
 
@@ -51,18 +49,14 @@ public class AuthenticationController {
         String pwd = password.getText();
 
 
-        // verify input account  (format + isEmpty)
-        boolean isGoodFormat = !username.isEmpty() &&
-                                !pwd.isEmpty()   &&
-                                Pattern.matches("^.{1,15}$", username) &&
-                                Pattern.matches("^.{6,15}$", pwd);
-        if (!isGoodFormat){
+        // is input value valid (no empty + good format)
+        if (!AccountVerification.isValidUsername(username) || !AccountVerification.isValidPWD(pwd)){
             alert.setContentText("Error : Invalid username or password");
             alert.show();
             return;
         }
 
-        // verify account's validity (search in dataBase)
+        // does the account exist + correct pwd
         Account account = new AccountDao().findAccount(username);
         if (account == null || !account.getPassword().equals(pwd)){
             alert.setContentText("Error : username not found or wrong password");
@@ -70,29 +64,22 @@ public class AuthenticationController {
             return;
         }
 
-        // if there is no problem
-        loginSuccessful(account);
+        // connect successful
+        Home home = new Home(new Profile(account),
+                             new Market(new ArrayList<Stock>(), new ArrayList<ExchangeRate>()),
+                             new ArrayList<Wallet>() );
+        SceneManager.setHome(home);
+
+            // load market data
+        home.getMarket().loadStocksData();
+        home.getMarket().loadRateData();
+
+        SceneManager.changeScene("/com/isep/projectjavawallet/home-view.fxml","Home");
     }
 
     @FXML
     private void signUpButtonClick(){
-        SceneManager.changeScene("/com/isep/projectjavawallet/loginViews/SignUp.fxml","Sign up");
-    }
-
-    private void loginSuccessful(Account account) throws SQLException {
-        /*
-            - retrieve user data
-            - create home
-            - complete all info
-         */
-
-        Home home = new Home(new Profile(account), new Market(new ArrayList<Stock>()), new ArrayList<Wallet>(), new ArrayList<ExchangeRate>() );
-        UserManager.setHome(home);
-        DataLoading.loadWalletData(account.getUsername(), UserManager.getHome().getWallets());
-        DataLoading.loadMarketData(UserManager.getHome().getMarket().getStocks());
-        DataLoading.loadCurrencyData(UserManager.getHome().getExchangeRates());
-
-        SceneManager.changeScene("/com/isep/projectjavawallet/home-view.fxml","Home");
+        SceneManager.changeScene("/com/isep/projectjavawallet/loginPart/SignUp.fxml","Sign up");
     }
 
 }
